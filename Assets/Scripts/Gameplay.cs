@@ -1,4 +1,5 @@
-﻿using System;
+﻿#define DEVELOP
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
@@ -17,7 +18,7 @@ public class Gameplay : MonoBehaviour
     void Awake()
     {
         instance = this;
-        
+
         players = new List<Player>();
     }
 
@@ -27,28 +28,28 @@ public class Gameplay : MonoBehaviour
         Vector3 placementOffsetVector = Vector3.zero;
         switch (players.Count)
         {
-            case 1: 
+            case 1:
                 placementOffsetVector = new Vector3(.5f, 0, 0);
                 break;
-            
-            case 2: 
+
+            case 2:
                 placementOffsetVector = new Vector3(-.5f, 0, 0);
                 break;
-            
-            case 3: 
+
+            case 3:
                 placementOffsetVector = new Vector3(0, 0, -.5f);
                 break;
         }
-        
+
         Player newPlayer = ((GameObject)(Instantiate(playerPrefab, PassGo.instance.transform.position + placementOffsetVector, playerPrefab.transform.rotation))).GetComponent<Player>();
-        
+
         newPlayer.SetPlayerName(playerName);
         newPlayer.SetIsAI(ai);
-        
+
         players.Add(newPlayer);
-        
+
         newPlayer.Initialize();
-        
+
         // Give this player a balance tracker.  
         BalanceTracker balanceTracker = balanceTrackers[players.Count - 1];
         balanceTracker.gameObject.SetActive(true);
@@ -62,8 +63,11 @@ public class Gameplay : MonoBehaviour
 
     private IEnumerator PlayGame()
     {
+#if DEVELOP
+        yield return CameraController.instance.LerpToViewBoardTarget(0f);
+#else
         yield return CameraController.instance.LerpToViewBoardTarget(5f);
-        
+        #endif
         // Simulate taking turns.  
         for (int i = 0; i < 35; i++)
         {

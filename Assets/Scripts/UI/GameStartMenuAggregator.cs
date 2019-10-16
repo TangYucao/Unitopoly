@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 
 public class GameStartMenuAggregator : MonoBehaviour
-{   
+{
     [SerializeField] private InputField[] selectionPanels = new InputField[4];
     [SerializeField] private Toggle[] aiToggles = new Toggle[4];
     [SerializeField] private GameObject selectionPanel3Parent, selectionPanel4Parent;
@@ -19,7 +19,7 @@ public class GameStartMenuAggregator : MonoBehaviour
 
         return nameField.text;
     }
-    
+
     public void StartGameClicked()
     {
         for (int i = 0; i < 4; i++)
@@ -29,12 +29,12 @@ public class GameStartMenuAggregator : MonoBehaviour
                 Debug.Log("Skipping player " + (i + 1));
                 continue;
             }
-            
+
             Gameplay.instance.RegisterNewPlayer(GetNameFromCreationPanel(i, selectionPanels[i], aiToggles[i]), aiToggles[i].isOn);
         }
-        
+
         Gameplay.instance.StartGame();
-        
+
         gameObject.SetActive(false);
     }
 }
