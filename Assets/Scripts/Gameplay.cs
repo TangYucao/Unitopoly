@@ -4,7 +4,10 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
-
+static class Globals
+{
+    public static float DEVELOP_TIME = 0.1f;
+}
 public class Gameplay : MonoBehaviour
 {
     public static Gameplay instance;
@@ -64,22 +67,24 @@ public class Gameplay : MonoBehaviour
     private IEnumerator PlayGame()
     {
 #if DEVELOP
-        yield return CameraController.instance.LerpToViewBoardTarget(0f);
+        yield return CameraController.instance.LerpToViewBoardTarget(Globals.DEVELOP_TIME);
 #else
         yield return CameraController.instance.LerpToViewBoardTarget(5f);
-        #endif
+#endif
         // Simulate taking turns.  
         for (int i = 0; i < 35; i++)
         {
             foreach (Player player in players)
-            {   
+            {
                 bool doubles = true;
                 int doubleRolls = 0;
+                yield return TurnActions.instance.DisplayPlayerName(player.GetPlayerName());
                 while (doubles)
                 {
                     if (!player.IsAI())
-                    {   
+                    {
                         TurnActions.UserAction chosenAction = TurnActions.UserAction.UNDECIDED;
+                        //TODO MARK: to implement other buttons other than ROLL button
                         while (chosenAction != TurnActions.UserAction.ROLL)
                         {
                             yield return TurnActions.instance.GetUserInput(true);
@@ -97,11 +102,11 @@ public class Gameplay : MonoBehaviour
                     yield return DieRoller.instance.RollDie();
                     int[] dieRollResults = DieRoller.instance.GetDieRollResults();
 
-                    // Too many doubles 
+                    // If roll a double, continue rolling
                     if (dieRollResults.Length != dieRollResults.Distinct().Count())
                     {
                         doubleRolls++;
-
+                        // Too many doubles 
                         if (doubleRolls >= 3)
                         {
                             yield return player.JumpToSpace(InJail.instance, 1f);
@@ -112,26 +117,13 @@ public class Gameplay : MonoBehaviour
                     {
                         doubles = false;
                     }
-                        
+
                     yield return player.MoveSpaces(dieRollResults.Sum());
                 }
-                
+
                 if (!player.IsAI())
                 {
                     yield return TurnActions.instance.GetUserInput(false);
-                    TurnActions.UserAction chosenAction = TurnActions.UserAction.UNDECIDED;
-                    
-                    while (chosenAction != TurnActions.UserAction.ROLL)
-                    {
-                        yield return TurnActions.instance.GetUserInput(true);
-                        chosenAction = TurnActions.instance.GetChosenAction();
-
-                        if (chosenAction != TurnActions.UserAction.ROLL)
-                        {
-                            Debug.LogError("Not implemented >:(");
-                            yield return new WaitForSeconds(2);
-                        }
-                    }
                 }
             }
         }

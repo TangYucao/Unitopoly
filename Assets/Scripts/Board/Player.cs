@@ -1,4 +1,5 @@
-﻿using System;
+﻿#define DEVELOP
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -6,15 +7,19 @@ using UnityEngine;
 public class Player : MonoBehaviour
 {
     private static int instantiatedPlayers = 0;
-    
+
     [HideInInspector] public List<Ownable> currentOwnables = new List<Ownable>();
 
     [SerializeField] private Material[] playerColors;
-    
+
     private string playerName;
     public void SetPlayerName(string playerName)
     {
         this.playerName = playerName;
+    }
+    public string GetPlayerName()
+    {
+        return this.playerName;
     }
 
     // Incremented by PassGo.  
@@ -34,10 +39,10 @@ public class Player : MonoBehaviour
     public void SetBalanceTracker(BalanceTracker balanceTracker)
     {
         this.balanceTracker = balanceTracker;
-        
+
         this.balanceTracker.UpdateName(playerName);
     }
-    
+
     // Money
     private int accountBalance = 1500;
 
@@ -51,7 +56,7 @@ public class Player : MonoBehaviour
     {
         return accountBalance;
     }
-    
+
     private BoardLocation currentSpace;
 
     public void Initialize()
@@ -66,7 +71,7 @@ public class Player : MonoBehaviour
         float progressionCoefficient = 0;
         float startTime = Time.time;
         float startAngle = transform.eulerAngles.y;
-                
+
         while (progressionCoefficient <= .98f)
         {
             progressionCoefficient = (Time.time - startTime) / timeForRotate;
@@ -74,7 +79,7 @@ public class Player : MonoBehaviour
 
             yield return null;
         }
-                
+
         // Finalize rotation.  
         transform.eulerAngles = new Vector3(transform.eulerAngles.x, startAngle + additionalDegrees, transform.eulerAngles.z);
     }
@@ -93,7 +98,7 @@ public class Player : MonoBehaviour
         while (progressionCoefficient <= .98f)
         {
             progressionCoefficient = (Time.time - startTime) / timeForJump;
-                
+
             Vector3 newPosition = startPosition + desiredDisplacement * progressionCoefficient;
             newPosition.y = -1 * Mathf.Pow(progressionCoefficient - 0.5f, 2) + 0.25f;
 
@@ -101,35 +106,45 @@ public class Player : MonoBehaviour
 
             yield return null;
         }
-            
+
         // Onto the next space!
         currentSpace = space;
         transform.position = currentSpace.transform.position;
     }
-    
+
     public IEnumerator MoveSpaces(int spaces)
-    {   
+    {
         bool movingForward = spaces > 0;
         spaces = Math.Abs(spaces);
 
         for (int i = 0; i < spaces; i++)
         {
             BoardLocation targetSpace = movingForward ? currentSpace.next : currentSpace.preceding;
-            
+
             currentSpace.PassBy(this);
-            
+#if DEVELOP
+            float timeForJump = Globals.DEVELOP_TIME;
+
+#else
             float timeForJump = .9f * (Mathf.Sqrt((i * 1.0f) / spaces + .8f) - .35f);
+#endif
+            //TODO MARK:CHANGE CAMERA VIEW
+            yield return currentSpace.LerpCameraViewToThisLocationWhenPass();
 
             yield return JumpToSpace(targetSpace, timeForJump);
-            
+
             // Rotate if we're on a corner space.  
             if (currentSpace is PassGo || currentSpace is GoToJail || currentSpace is InJail ||
                 currentSpace is FreeParking)
             {
+#if DEVELOP
+                yield return RotateAdditionalDegrees(movingForward ? 90 : -90, Globals.DEVELOP_TIME);
+#else
                 yield return RotateAdditionalDegrees(movingForward ? 90 : -90, 1f);
+#endif
             }
         }
-        
+
         // Tell the space we ended on that we landed on it.  
         yield return currentSpace.LandOn(this);
     }

@@ -13,6 +13,7 @@ public class TurnActions : MonoBehaviour
     }
 
     [SerializeField] private Text rollText;
+    [SerializeField] private Text player_name;
     
     public enum UserAction {ROLL, TRADE, MORTGAGE, BUILD, UNDECIDED}
     private UserAction chosenAction = UserAction.UNDECIDED;
@@ -52,5 +53,13 @@ public class TurnActions : MonoBehaviour
     public void Build()
     {
         chosenAction = UserAction.BUILD;
+    }
+
+    
+    public IEnumerator DisplayPlayerName(string name)
+    {
+        this.player_name.text=name;
+        Debug.Log("[62]"+name);
+        yield return null;
     }
 }
