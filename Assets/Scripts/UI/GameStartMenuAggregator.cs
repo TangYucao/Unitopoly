@@ -11,12 +11,14 @@ public class GameStartMenuAggregator : MonoBehaviour
 
     private string GetNameFromCreationPanel(int num, InputField nameField, Toggle aiToggle)
     {
-        if (aiToggle.isOn)
-            return "AI " + num;
 
         if (nameField.text.Equals(""))
-            return "Player " + num;
-
+        {
+            if (aiToggle.isOn)
+                return "AI " + num;
+            else
+                return "Player " + num;
+        }
         return nameField.text;
     }
 
