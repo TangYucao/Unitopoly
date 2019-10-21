@@ -57,7 +57,7 @@ public class Player : MonoBehaviour
         return accountBalance;
     }
 
-    private BoardLocation currentSpace;
+    public BoardLocation currentSpace;
 
     public void Initialize()
     {

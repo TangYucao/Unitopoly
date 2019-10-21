@@ -1,0 +1,6 @@
+test1: When you see red light , you should break and stop. 
+TRUE 5
+test2: When you see red light , you should rush and rush and rush and rush and rush and rush and rush and rush and rush and rush and rush and rush and rush and rush and rush and rush and rush and rush and rush and rush and rush and rush and rush and rush and rush and rush and rush and rush and rush and rush and rush and rush and rush and rush and rush and rush and rush and rush and rush and rush and rush and rush and rush and rush and rush and rush .
+FALSE 2
+test2: When you see yellow light , you should rush and rush and rush and rush and rush and rush and rush and rush and rush and rush and rush and rush and rush and rush and rush and rush and rush and rush and rush and rush and rush and rush and rush and rush and rush and rush and rush and rush and rush and rush and rush and rush and rush and rush and rush and rush and rush and rush and rush and rush and rush and rush and rush and rush and rush and rush .
+FALSE 10

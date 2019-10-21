@@ -30,7 +30,7 @@ public abstract class Ownable : BoardLocation
                     owner = player;
                 }
 
-                yield return LerpCameraViewBackToMainBoardView();
+                yield return LerpCameraViewToThisLocationWhenPass();
             }
             else
             {

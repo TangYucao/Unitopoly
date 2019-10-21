@@ -79,6 +79,7 @@ public class Gameplay : MonoBehaviour
                 bool doubles = true;
                 int doubleRolls = 0;
                 yield return TurnActions.instance.DisplayPlayerName(player.GetPlayerName());
+                if( i>0||players.IndexOf(player)>0) yield return player.currentSpace.LerpCameraViewToThisLocationWhenPass();
                 while (doubles)
                 {
                     if (!player.IsAI())
@@ -117,14 +118,18 @@ public class Gameplay : MonoBehaviour
                     {
                         doubles = false;
                     }
-
+#if DEVELOP
+                    yield return player.MoveSpaces(3);
+#else
                     yield return player.MoveSpaces(dieRollResults.Sum());
+#endif
                 }
 
                 if (!player.IsAI())
                 {
                     yield return TurnActions.instance.GetUserInput(false);
                 }
+
             }
         }
     }
