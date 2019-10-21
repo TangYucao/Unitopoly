@@ -13,14 +13,14 @@ public class TrueFalseUI : MonoBehaviour
     }
 
     [SerializeField] private Image image;
-    [SerializeField] private string content;
+    [SerializeField] private Text content;
 
     [HideInInspector] public bool selection_made, result_selection;
 
     public IEnumerator GetSelection(TrueFalse true_false)
     {
         selection_made = false;
-        content=true_false.content;
+        content.text=true_false.content;
         image.sprite = true_false.deed;
         transform.GetChild(0).gameObject.SetActive(true);
         while (!selection_made)
