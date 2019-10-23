@@ -9107,8 +9107,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 818f253e5d398428d8b633ac0c4c98b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerPrefab: {fileID: 1841651010534694, guid: d726529b54fc54d14afc3e8a1aa22478,
-    type: 3}
+  playerPrefab: {fileID: 140316, guid: 2cd5d52bec1bbd74aa18e7ef142a8cd0, type: 3}
   balanceTrackers:
   - {fileID: 524954895}
   - {fileID: 1036961795}

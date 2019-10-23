@@ -9,6 +9,7 @@ public class Player : MonoBehaviour
     private static int instantiatedPlayers = 0;
 
     [HideInInspector] public List<Ownable> currentOwnables = new List<Ownable>();
+    [SerializeField] public float yOffsetToTheGround;
 
     [SerializeField] private Material[] playerColors;
 
@@ -45,6 +46,7 @@ public class Player : MonoBehaviour
 
     // Money
     private int accountBalance = 1500;
+    public Vector3 costumeOffset;
 
     public void AdjustBalanceBy(int balance)
     {
@@ -61,9 +63,13 @@ public class Player : MonoBehaviour
 
     public void Initialize()
     {
-        transform.GetChild(0).GetComponent<MeshRenderer>().sharedMaterial = playerColors[instantiatedPlayers];
+        foreach (Transform child in transform) 
+        {
+            child.GetComponent<MeshRenderer>().sharedMaterial = playerColors[instantiatedPlayers];
+        }
         currentSpace = PassGo.instance;
         instantiatedPlayers++;
+        costumeOffset = new Vector3(0, yOffsetToTheGround, 0);
     }
 
     public IEnumerator RotateAdditionalDegrees(float additionalDegrees, float timeForRotate)
@@ -109,7 +115,7 @@ public class Player : MonoBehaviour
 
         // Onto the next space!
         currentSpace = space;
-        transform.position = currentSpace.transform.position;
+        transform.position = currentSpace.transform.position + this.costumeOffset;
     }
 
     public IEnumerator MoveSpaces(int spaces)

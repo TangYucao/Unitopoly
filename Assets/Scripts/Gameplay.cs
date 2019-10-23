@@ -21,7 +21,7 @@ public class Gameplay : MonoBehaviour
     void Awake()
     {
         instance = this;
-
+        
         players = new List<Player>();
     }
 
@@ -44,7 +44,7 @@ public class Gameplay : MonoBehaviour
                 break;
         }
 
-        Player newPlayer = ((GameObject)(Instantiate(playerPrefab, PassGo.instance.transform.position + placementOffsetVector, playerPrefab.transform.rotation))).GetComponent<Player>();
+        Player newPlayer = ((GameObject)(Instantiate(playerPrefab, new Vector3(0,playerPrefab.GetComponent<Player>().yOffsetToTheGround,0)+PassGo.instance.transform.position + placementOffsetVector, playerPrefab.transform.rotation))).GetComponent<Player>();
 
         newPlayer.SetPlayerName(playerName);
         newPlayer.SetIsAI(ai);
