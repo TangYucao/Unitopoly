@@ -1,0 +1,12 @@
+﻿test1:what is the speed limit of highway?
+1.45 
+2.55 
+3.65 
+4.75
+3 5
+test2:what is the speed limit of local?
+1.25
+2.35
+3.45
+4.55
+3 10
