@@ -13,6 +13,8 @@ public class Gameplay : MonoBehaviour
     public static Gameplay instance;
 
     private List<Player> players;
+    private HashSet<string> module_used;
+
 
     [SerializeField] private GameObject playerPrefab;
 
@@ -21,8 +23,9 @@ public class Gameplay : MonoBehaviour
     void Awake()
     {
         instance = this;
-        
+
         players = new List<Player>();
+        module_used = new HashSet<string>();
     }
 
     public void RegisterNewPlayer(string playerName, bool ai)
@@ -43,14 +46,23 @@ public class Gameplay : MonoBehaviour
                 placementOffsetVector = new Vector3(0, 0, -.5f);
                 break;
         }
-
-        Player newPlayer = ((GameObject)(Instantiate(playerPrefab, new Vector3(0,playerPrefab.GetComponent<Player>().yOffsetToTheGround,0)+PassGo.instance.transform.position + placementOffsetVector, playerPrefab.transform.rotation))).GetComponent<Player>();
+        System.Random random = new System.Random();
+        int index = random.Next(1, 9);
+        string car_module_name = "Car" + index.ToString();
+        while (module_used.Contains(car_module_name))
+        {
+            index = random.Next(1, 8);
+            car_module_name = "Car" + index.ToString();
+        }
+        module_used.Add(car_module_name);
+        Debug.Log(car_module_name);
+        GameObject module = playerPrefab.transform.Find(car_module_name).gameObject;
+        Player newPlayer = ((GameObject)(Instantiate(module, new Vector3(0, module.GetComponent<Player>().yOffsetToTheGround, 0) + PassGo.instance.transform.position + placementOffsetVector, module.transform.rotation))).GetComponent<Player>();
 
         newPlayer.SetPlayerName(playerName);
         newPlayer.SetIsAI(ai);
 
         players.Add(newPlayer);
-
         newPlayer.Initialize();
 
         // Give this player a balance tracker.  
@@ -58,7 +70,62 @@ public class Gameplay : MonoBehaviour
         balanceTracker.gameObject.SetActive(true);
         newPlayer.SetBalanceTracker(balanceTracker);
     }
+    private void HandlePlayersCollision()
+    {
+        List<Vector3> player_positions = new List<Vector3>();
+        foreach (Player player in players)
+        {
+            player_positions.Add(player.transform.position);
+        }
+        if (player_positions.Distinct().Count() == player_positions.Count)
+            return;
+        int idx = 0;
+        foreach (Player player in players)
+        {
+            idx++;
+            if (!player.rotated)
+            {
+                switch (idx)
+                {
+                    case 1:
+                        player.transform.position = new Vector3(0, 0, 0);
+                        break;
+                    case 2:
+                        player.transform.position = new Vector3(.25f, 0, 0);
 
+                        break;
+                    case 3:
+                        player.transform.position = new Vector3(0.5f, 0, 0);
+                        break;
+                    case 4:
+                        player.transform.position = new Vector3(-0.25f, 0, 0);
+                        break;
+                }
+            }
+            else
+            {
+                Debug.Log("[107]");
+                switch (idx)
+                {
+                    case 1:
+                        player.transform.position = new Vector3(0, 0, 0);
+                        break;
+                    case 2:
+                        player.transform.position = new Vector3(0, 0.25f, 0);
+
+                        break;
+                    case 3:
+                        player.transform.position = new Vector3(0, 0.5f, 0);
+                        break;
+                    case 4:
+                        player.transform.position = new Vector3(0, -0.25f, 0);
+                        break;
+                }
+            }
+            player.transform.position += player.currentSpace.transform.position + player.costumeOffset;
+
+        }
+    }
     public void StartGame()
     {
         StartCoroutine(PlayGame());
@@ -79,7 +146,7 @@ public class Gameplay : MonoBehaviour
                 bool doubles = true;
                 int doubleRolls = 0;
                 yield return TurnActions.instance.DisplayPlayerName(player.GetPlayerName());
-                if( i>0||players.IndexOf(player)>0) yield return player.currentSpace.LerpCameraViewToThisLocationWhenPass();
+                if (i > 0 || players.IndexOf(player) > 0) yield return player.currentSpace.LerpCameraViewToThisLocationWhenPass();
                 while (doubles)
                 {
                     if (!player.IsAI())
@@ -123,6 +190,7 @@ public class Gameplay : MonoBehaviour
 #else
                     yield return player.MoveSpaces(dieRollResults.Sum());
 #endif
+                    HandlePlayersCollision();
                 }
 
                 if (!player.IsAI())

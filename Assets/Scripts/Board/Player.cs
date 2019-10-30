@@ -14,6 +14,7 @@ public class Player : MonoBehaviour
     [SerializeField] private Material[] playerColors;
 
     private string playerName;
+    public bool rotated;
     public void SetPlayerName(string playerName)
     {
         this.playerName = playerName;
@@ -63,13 +64,11 @@ public class Player : MonoBehaviour
 
     public void Initialize()
     {
-        foreach (Transform child in transform) 
-        {
-            child.GetComponent<MeshRenderer>().sharedMaterial = playerColors[instantiatedPlayers];
-        }
+        // transform.GetChild(0).GetComponent<MeshRenderer>().sharedMaterial = playerColors[instantiatedPlayers];
         currentSpace = PassGo.instance;
         instantiatedPlayers++;
         costumeOffset = new Vector3(0, yOffsetToTheGround, 0);
+        rotated=false;
     }
 
     public IEnumerator RotateAdditionalDegrees(float additionalDegrees, float timeForRotate)
@@ -143,6 +142,8 @@ public class Player : MonoBehaviour
             if (currentSpace is PassGo || currentSpace is GoToJail || currentSpace is InJail ||
                 currentSpace is FreeParking)
             {
+                rotated=!rotated;
+                Debug.Log("[146}"+rotated);
 #if DEVELOP
                 yield return RotateAdditionalDegrees(movingForward ? 90 : -90, Globals.DEVELOP_TIME);
 #else
