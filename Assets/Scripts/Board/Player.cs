@@ -7,6 +7,10 @@ using UnityEngine;
 public class Player : MonoBehaviour
 {
     private static int instantiatedPlayers = 0;
+    // Shield protect player from bombing.
+    public bool shield = false;
+    // After been bombed, remain to the current location.
+    public int remaining_stays = 1;
 
     [HideInInspector] public List<Ownable> currentOwnables = new List<Ownable>();
     [SerializeField] public float yOffsetToTheGround;
@@ -68,7 +72,7 @@ public class Player : MonoBehaviour
         currentSpace = PassGo.instance;
         instantiatedPlayers++;
         costumeOffset = new Vector3(0, yOffsetToTheGround, 0);
-        rotated=false;
+        rotated = false;
     }
 
     public IEnumerator RotateAdditionalDegrees(float additionalDegrees, float timeForRotate)
@@ -142,8 +146,8 @@ public class Player : MonoBehaviour
             if (currentSpace is PassGo || currentSpace is GoToJail || currentSpace is InJail ||
                 currentSpace is FreeParking)
             {
-                rotated=!rotated;
-                Debug.Log("[146}"+rotated);
+                rotated = !rotated;
+                Debug.Log("[146}" + rotated);
 #if DEVELOP
                 yield return RotateAdditionalDegrees(movingForward ? 90 : -90, Globals.DEVELOP_TIME);
 #else

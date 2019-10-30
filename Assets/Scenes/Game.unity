@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.9965386, g: 0.8711928, b: 0.7254983, a: 1}
+  m_IndirectSpecularColor: {r: 0.9964315, g: 0.8711385, b: 0.7254699, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -7143,7 +7143,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1943748415}
-        m_MethodName: SelectFalse
+        m_MethodName: Select2
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -8905,7 +8905,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1943748415}
-        m_MethodName: SelectTrue
+        m_MethodName: Select3
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -10953,8 +10953,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2d88c889b1e14456a829230ec7272c92, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
+  preceding: {fileID: 0}
+  next: {fileID: 0}
+  text_asset: {fileID: 4900000, guid: 8a9367ebe4acc490e81de5c23059db45, type: 3}
+  deed: {fileID: 0}
+  question_value: 0
+  content: 
+  choice1: 
+  choice2: 
+  choice3: 
+  choice4: 
+  result: 0
 --- !u!1 &1514999676
 GameObject:
   m_ObjectHideFlags: 0
@@ -13489,7 +13498,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1943748415}
-        m_MethodName: SelectTrue
+        m_MethodName: Select4
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -13687,7 +13696,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1943748415}
-        m_MethodName: SelectTrue
+        m_MethodName: Select1
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -14264,11 +14273,17 @@ MonoBehaviour:
   m_GameObject: {fileID: 1943748413}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec116717f7c7d4e0fa9728f5740bef0f, type: 3}
+  m_Script: {fileID: 11500000, guid: e725b1afd20bd44edbc01d2d66cf9d42, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
+  image: {fileID: 730053804}
+  content: {fileID: 781608147}
+  choice1: {fileID: 406906379}
+  choice2: {fileID: 1708613492}
+  choice3: {fileID: 796268974}
+  choice4: {fileID: 1470580129}
+  selection_made: 0
+  result_selection: 0
 --- !u!1 &1956572968
 GameObject:
   m_ObjectHideFlags: 0

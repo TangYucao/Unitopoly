@@ -19,6 +19,7 @@ MonoBehaviour:
   - {fileID: 2100000, guid: b97f10bb10c4147e1a60ffcd97eaaee4, type: 2}
   - {fileID: 2100000, guid: 5cf756c651fb643f3a98d9e3ce6e1213, type: 2}
   - {fileID: 2100000, guid: d2c1e53936beb473c8113ee4a300ed19, type: 2}
+  rotated: 0
   timesPastGo: 0
   costumeOffset: {x: 0, y: 0, z: 0}
   currentSpace: {fileID: 0}
@@ -41,6 +42,7 @@ MonoBehaviour:
   - {fileID: 2100000, guid: b97f10bb10c4147e1a60ffcd97eaaee4, type: 2}
   - {fileID: 2100000, guid: 5cf756c651fb643f3a98d9e3ce6e1213, type: 2}
   - {fileID: 2100000, guid: d2c1e53936beb473c8113ee4a300ed19, type: 2}
+  rotated: 0
   timesPastGo: 0
   costumeOffset: {x: 0, y: 0, z: 0}
   currentSpace: {fileID: 0}
@@ -63,6 +65,7 @@ MonoBehaviour:
   - {fileID: 2100000, guid: b97f10bb10c4147e1a60ffcd97eaaee4, type: 2}
   - {fileID: 2100000, guid: 5cf756c651fb643f3a98d9e3ce6e1213, type: 2}
   - {fileID: 2100000, guid: d2c1e53936beb473c8113ee4a300ed19, type: 2}
+  rotated: 0
   timesPastGo: 0
   costumeOffset: {x: 0, y: 0, z: 0}
   currentSpace: {fileID: 0}
@@ -85,6 +88,7 @@ MonoBehaviour:
   - {fileID: 2100000, guid: b97f10bb10c4147e1a60ffcd97eaaee4, type: 2}
   - {fileID: 2100000, guid: 5cf756c651fb643f3a98d9e3ce6e1213, type: 2}
   - {fileID: 2100000, guid: d2c1e53936beb473c8113ee4a300ed19, type: 2}
+  rotated: 0
   timesPastGo: 0
   costumeOffset: {x: 0, y: 0, z: 0}
   currentSpace: {fileID: 0}
@@ -148,6 +152,7 @@ MonoBehaviour:
   - {fileID: 2100000, guid: b97f10bb10c4147e1a60ffcd97eaaee4, type: 2}
   - {fileID: 2100000, guid: 5cf756c651fb643f3a98d9e3ce6e1213, type: 2}
   - {fileID: 2100000, guid: d2c1e53936beb473c8113ee4a300ed19, type: 2}
+  rotated: 0
   timesPastGo: 0
   costumeOffset: {x: 0, y: 0, z: 0}
   currentSpace: {fileID: 0}
@@ -170,6 +175,7 @@ MonoBehaviour:
   - {fileID: 2100000, guid: b97f10bb10c4147e1a60ffcd97eaaee4, type: 2}
   - {fileID: 2100000, guid: 5cf756c651fb643f3a98d9e3ce6e1213, type: 2}
   - {fileID: 2100000, guid: d2c1e53936beb473c8113ee4a300ed19, type: 2}
+  rotated: 0
   timesPastGo: 0
   costumeOffset: {x: 0, y: 0, z: 0}
   currentSpace: {fileID: 0}
@@ -192,6 +198,7 @@ MonoBehaviour:
   - {fileID: 2100000, guid: b97f10bb10c4147e1a60ffcd97eaaee4, type: 2}
   - {fileID: 2100000, guid: 5cf756c651fb643f3a98d9e3ce6e1213, type: 2}
   - {fileID: 2100000, guid: d2c1e53936beb473c8113ee4a300ed19, type: 2}
+  rotated: 0
   timesPastGo: 0
   costumeOffset: {x: 0, y: 0, z: 0}
   currentSpace: {fileID: 0}
@@ -214,6 +221,7 @@ MonoBehaviour:
   - {fileID: 2100000, guid: b97f10bb10c4147e1a60ffcd97eaaee4, type: 2}
   - {fileID: 2100000, guid: 5cf756c651fb643f3a98d9e3ce6e1213, type: 2}
   - {fileID: 2100000, guid: d2c1e53936beb473c8113ee4a300ed19, type: 2}
+  rotated: 0
   timesPastGo: 0
   costumeOffset: {x: 0, y: 0, z: 0}
   currentSpace: {fileID: 0}
@@ -236,6 +244,7 @@ MonoBehaviour:
   - {fileID: 2100000, guid: b97f10bb10c4147e1a60ffcd97eaaee4, type: 2}
   - {fileID: 2100000, guid: 5cf756c651fb643f3a98d9e3ce6e1213, type: 2}
   - {fileID: 2100000, guid: d2c1e53936beb473c8113ee4a300ed19, type: 2}
+  rotated: 0
   timesPastGo: 0
   costumeOffset: {x: 0, y: 0, z: 0}
   currentSpace: {fileID: 0}

@@ -147,6 +147,12 @@ public class Gameplay : MonoBehaviour
                 int doubleRolls = 0;
                 yield return TurnActions.instance.DisplayPlayerName(player.GetPlayerName());
                 if (i > 0 || players.IndexOf(player) > 0) yield return player.currentSpace.LerpCameraViewToThisLocationWhenPass();
+                if(i > 0)
+                if(player.remaining_stays-->0)
+                {
+                    Debug.Log(player.GetPlayerName()+" is blocked for 1 round.");
+                    continue;
+                }
                 while (doubles)
                 {
                     if (!player.IsAI())
