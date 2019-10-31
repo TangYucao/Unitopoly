@@ -45,6 +45,12 @@ public class TrueFalse : BoardLocation
             if (TrueFalseUI.instance.result_selection == this.result)
             {
                 player.AdjustBalanceBy(question_value);
+                yield return MessageAlert.instance.DisplayAlert(player.GetPlayerName() + " is correct. Get "+question_value+" point", Color.green);
+            }
+            else
+            {
+                yield return MessageAlert.instance.DisplayAlert(player.GetPlayerName() + " is wrong." , Color.red);
+
             }
 
             yield return LerpCameraViewToThisLocationWhenPass();

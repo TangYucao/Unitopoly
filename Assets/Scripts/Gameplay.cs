@@ -147,10 +147,9 @@ public class Gameplay : MonoBehaviour
                 int doubleRolls = 0;
                 yield return TurnActions.instance.DisplayPlayerName(player.GetPlayerName());
                 if (i > 0 || players.IndexOf(player) > 0) yield return player.currentSpace.LerpCameraViewToThisLocationWhenPass();
-                if(i > 0)
-                if(player.remaining_stays-->0)
+                if (player.remaining_stays-- > 0)
                 {
-                    Debug.Log(player.GetPlayerName()+" is blocked for 1 round.");
+                    yield return MessageAlert.instance.DisplayAlert(player.GetPlayerName() + " is blocked for " + (player.remaining_stays + 1) + " round.",Color.red);
                     continue;
                 }
                 while (doubles)
@@ -166,8 +165,15 @@ public class Gameplay : MonoBehaviour
 
                             if (chosenAction != TurnActions.UserAction.ROLL)
                             {
+#if DEVELOP
+                                if (chosenAction == TurnActions.UserAction.BUILD)
+                                {
+                                    yield return BombUI.instance.Bomb(3);
+                                }
+#else
                                 Debug.LogError("Not implemented >:(");
                                 yield return new WaitForSeconds(2);
+#endif
                             }
                         }
                     }
@@ -206,5 +212,9 @@ public class Gameplay : MonoBehaviour
 
             }
         }
+    }
+    public List<Player> GetPlayers()
+    {
+        return players;
     }
 }

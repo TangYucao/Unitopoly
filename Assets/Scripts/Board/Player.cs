@@ -8,9 +8,9 @@ public class Player : MonoBehaviour
 {
     private static int instantiatedPlayers = 0;
     // Shield protect player from bombing.
-    public bool shield = false;
+    public bool shield;
     // After been bombed, remain to the current location.
-    public int remaining_stays = 1;
+    public int remaining_stays;
 
     [HideInInspector] public List<Ownable> currentOwnables = new List<Ownable>();
     [SerializeField] public float yOffsetToTheGround;
@@ -73,6 +73,8 @@ public class Player : MonoBehaviour
         instantiatedPlayers++;
         costumeOffset = new Vector3(0, yOffsetToTheGround, 0);
         rotated = false;
+        remaining_stays = 0;
+        shield = false;
     }
 
     public IEnumerator RotateAdditionalDegrees(float additionalDegrees, float timeForRotate)
