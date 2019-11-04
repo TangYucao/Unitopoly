@@ -26,9 +26,9 @@ public class DieRoller : MonoBehaviour
         }
     }
 
-    public IEnumerator RollDie()
+    public IEnumerator RollDie(int dice_number)
     {
-        for (int i = 0; i < transform.childCount; i++)
+        for (int i = 0; i < transform.childCount&&i<dice_number; i++)
         {
             transform.GetChild(i).gameObject.SetActive(true);
             transform.GetChild(i).transform.position = initialDiePositions[i];
@@ -65,6 +65,5 @@ public class DieRoller : MonoBehaviour
         for (int i = 0; i < dies.Length; i++)
             dieRollResults[i] = dies[i].GetDieValue();
         
-        Debug.Log("Got " + dieRollResults);
     }
 }

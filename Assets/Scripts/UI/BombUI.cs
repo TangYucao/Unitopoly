@@ -59,14 +59,16 @@ public class BombUI : MonoBehaviour
             yield return null;
         }
         transform.GetChild(0).gameObject.SetActive(false);
+        int index = result_selection - 1;
         //If shield detected, bomb is no use.
-        if (!Gameplay.instance.GetPlayers()[result_selection - 1].shield)
+        if (!Gameplay.instance.GetPlayers()[index].shield)
         {
-            Gameplay.instance.GetPlayers()[result_selection - 1].remaining_stays = round;
+            yield return MessageAlert.instance.DisplayAlert(Gameplay.instance.GetPlayers()[index].GetPlayerName() + " is bombed!", Color.green);
+            Gameplay.instance.GetPlayers()[index].remaining_stays = round;
         }
         else
         {
-            Debug.Log(Gameplay.instance.GetPlayers()[result_selection - 1].GetPlayerName() + " has sheild.");
+            yield return MessageAlert.instance.DisplayAlert(Gameplay.instance.GetPlayers()[index].GetPlayerName() + " has sheild.", Color.yellow);
         }
     }
 

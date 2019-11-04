@@ -179,11 +179,11 @@ public class Gameplay : MonoBehaviour
                     }
 
                     // Roll dies.  
-                    yield return DieRoller.instance.RollDie();
+                    yield return DieRoller.instance.RollDie(player.dice_number);
                     int[] dieRollResults = DieRoller.instance.GetDieRollResults();
-
+                    Debug.Log("[184]"+dieRollResults.Sum());
                     // If roll a double, continue rolling
-                    if (dieRollResults.Length != dieRollResults.Distinct().Count())
+                    if (dieRollResults.Length != dieRollResults.Distinct().Count()&& dieRollResults.Distinct().Count()==1)
                     {
                         doubleRolls++;
                         // Too many doubles 
