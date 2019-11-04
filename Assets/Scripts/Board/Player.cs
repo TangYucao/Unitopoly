@@ -11,6 +11,8 @@ public class Player : MonoBehaviour
     public bool shield;
     // After been bombed, remain to the current location.
     public int remaining_stays;
+    // After upgrade, dice can be 3 or more. Init is 2. 
+    public int dice_number;
 
     [HideInInspector] public List<Ownable> currentOwnables = new List<Ownable>();
     [SerializeField] public float yOffsetToTheGround;
@@ -75,6 +77,7 @@ public class Player : MonoBehaviour
         rotated = false;
         remaining_stays = 0;
         shield = false;
+        dice_number=2;
     }
 
     public IEnumerator RotateAdditionalDegrees(float additionalDegrees, float timeForRotate)
