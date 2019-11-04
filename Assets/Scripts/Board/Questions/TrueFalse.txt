@@ -1,6 +1,80 @@
-test1: When you see red light , you should break and stop. 
-TRUE 5
-test2: When you see red light , you should rush and rush and rush and rush and rush and rush and rush and rush and rush and rush and rush and rush and rush and rush and rush and rush and rush and rush and rush and rush and rush and rush and rush and rush and rush and rush and rush and rush and rush and rush and rush and rush and rush and rush and rush and rush and rush and rush and rush and rush and rush and rush and rush and rush and rush and rush .
-FALSE 2
-test3: When you see yellow light , you should rush and rush and rush and rush and rush and rush and rush and rush and rush and rush and rush and rush and rush and rush and rush and rush and rush and rush and rush and rush and rush and rush and rush and rush and rush and rush and rush and rush and rush and rush and rush and rush and rush and rush and rush and rush and rush and rush and rush and rush and rush and rush and rush and rush and rush and rush .
-FALSE 10
+Under no circumstances can you drive off of the paved roadway to pass another vehicle.
+TRUE
+You are approaching a railroad crossing with no warning devices and are unable to see 400 feet down the tracks in one direction. The speed limit is: 15 mph
+TRUE
+When parking your vehicle parallel to the curb on a level street, your front wheels must be turned toward the street.
+FALSE
+When you are merging onto the freeway, you should be driving 5 to 10 MPH slower than the traffic on the freeway.
+FALSE
+When driving in fog, you should use your fog lights and low beam.
+TRUE
+A white painted curb means loading zone for passengers or mail only.
+TRUE
+A school bus ahead of you in your lane is stopped with red lights flashing. You should slow to 25 MPH and pass cautiously.
+FALSE
+California's "Basic Speed Law" says you should never drive faster than is safe for current conditions, might faster than posted speed limits.
+TRUE
+You just sold your vehicle. You must notify the DMV within 5 days.
+TRUE
+To avoid last minute moves, you should be looking down the road to where your vehicle will be in about 10 to 15 seconds
+TRUE
+You are about to make a left turn. You must signal continuously during the last 100 feet before the turn.
+TRUE
+Large trucks have smaller blind spots than most passenger vehicles.
+FALSE
+Unless otherwise posted the speed limit in a residential area is 25 mph
+TRUE
+You may legally block an intersection under no circumstances.
+TRUE
+When parking uphill on a two-way street with no curb, your front wheels should be turned to the right (away from the street).
+TRUE
+With a Class C drivers license a person may drive a vehicle pulling two trailers.
+FALSE
+To turn left from a multilane one-way street onto a one-way street, you should start your turn from any lane (as long as it is safe).
+FALSE
+If you are involved in a traffic collision, you are required to complete and submit a written report (SR1) to the DMV if there is property damage in excess of $1,000 or if there are any injuries.
+TRUE
+Roadways are the most slippery the first rain after a dry spell.
+TRUE
+You can turn right without slowing down when red light is on.
+FALSE
+You can obtain residence address for process serving purposes and small claim actions.
+FALSE
+You can register a vehicle if I'm a minor and do not possess a driver's license.
+FALSE
+You can do online bill payment through my bank to the DMV.
+TRUE
+You need a social security number (SSN) to apply a driver license.
+FALSE
+DMV can reexamine a driver who does not have a medical problem but whose driving skills are nevertheless deteriorating.
+TRUE
+DMV automatically reexamine drivers of a certain age.
+FALSE
+You need to notify DMV when you change your address.
+TRUE
+You don't need to pay the tax when buying a car from a private party.
+FALSE
+The DMV will charge a Vehicle Registration Fee annually.
+TRUE
+Insurance is required on all vehicles operated or parked on California roadways.
+TRUE
+Do I need to purchase auto insurance before buying my car?
+TRUE
+You must carry proof of insurance in your vehicle at all times.
+TRUE
+The Minimum Liability Insurance Requirements for Private Passenger Vehicles are: $15,000 for injury/death to one person; $30,000 for injury/death to more than one person; $5,000 for damage to property.
+TRUE
+You do not need to notify DMV Before you Cancel your Insurance.
+FALSE
+If you were in a car accident yesterday, you can buy insurance for it today.
+FALSE
+you can be the insurance policyholder for your family member's car.
+FALSE
+Insurance has a lot of acronyms. PIP stands for Property insurance penalty.
+FALSE
+The only coverage you must purchase is liability. 
+TRUE
+You should file a claim even if the accident wasn’t your fault?
+TRUE
+You need to file a police report for vandalism to or theft of or from your vehicle.
+TRUE
