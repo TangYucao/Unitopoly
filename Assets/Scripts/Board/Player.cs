@@ -13,6 +13,8 @@ public class Player : MonoBehaviour
     public int remaining_stays;
     // After upgrade, dice can be 3 or more. Init is 2. 
     public int dice_number;
+    // Income ratio when they answer correctly.
+    public int income_ratio=1;
 
     [HideInInspector] public List<Ownable> currentOwnables = new List<Ownable>();
     [SerializeField] public float yOffsetToTheGround;

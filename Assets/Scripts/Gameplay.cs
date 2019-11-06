@@ -149,7 +149,7 @@ public class Gameplay : MonoBehaviour
                 if (i > 0 || players.IndexOf(player) > 0) yield return player.currentSpace.LerpCameraViewToThisLocationWhenPass();
                 if (player.remaining_stays-- > 0)
                 {
-                    yield return MessageAlert.instance.DisplayAlert(player.GetPlayerName() + " is blocked for " + (player.remaining_stays + 1) + " round.",Color.red);
+                    yield return MessageAlert.instance.DisplayAlert(player.GetPlayerName() + " is blocked for " + (player.remaining_stays + 1) + " round.", Color.red);
                     continue;
                 }
                 while (doubles)
@@ -170,6 +170,10 @@ public class Gameplay : MonoBehaviour
                                 {
                                     yield return BombUI.instance.Bomb(3);
                                 }
+                                else if (chosenAction == TurnActions.UserAction.TRADE)
+                                {
+                                    yield return ThiefUI.instance.Steal( players.IndexOf(player) );
+                                }
 #else
                                 Debug.LogError("Not implemented >:(");
                                 yield return new WaitForSeconds(2);
@@ -181,9 +185,9 @@ public class Gameplay : MonoBehaviour
                     // Roll dies.  
                     yield return DieRoller.instance.RollDie(player.dice_number);
                     int[] dieRollResults = DieRoller.instance.GetDieRollResults();
-                    Debug.Log("[184]"+dieRollResults.Sum());
+                    Debug.Log("[184]" + dieRollResults.Sum());
                     // If roll a double, continue rolling
-                    if (dieRollResults.Length != dieRollResults.Distinct().Count()&& dieRollResults.Distinct().Count()==1)
+                    if (dieRollResults.Length != dieRollResults.Distinct().Count() && dieRollResults.Distinct().Count() == 1)
                     {
                         doubleRolls++;
                         // Too many doubles 
@@ -209,7 +213,6 @@ public class Gameplay : MonoBehaviour
                 {
                     yield return TurnActions.instance.GetUserInput(false);
                 }
-
             }
         }
     }
