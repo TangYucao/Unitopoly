@@ -14,7 +14,7 @@ public class Player : MonoBehaviour
     // After upgrade, dice can be 3 or more. Init is 2. 
     public int dice_number;
     // Income ratio when they answer correctly.
-    public int income_ratio=1;
+    public int income_ratio;
 
     [HideInInspector] public List<Ownable> currentOwnables = new List<Ownable>();
     [SerializeField] public float yOffsetToTheGround;
@@ -59,7 +59,14 @@ public class Player : MonoBehaviour
 
     public void AdjustBalanceBy(int balance)
     {
-        accountBalance += balance;
+        if (balance > 0)
+        {
+            accountBalance += income_ratio * balance;
+        }
+        else
+        {
+            accountBalance += balance;
+        }
         balanceTracker.UpdateBalance(accountBalance);
     }
 
@@ -79,7 +86,8 @@ public class Player : MonoBehaviour
         rotated = false;
         remaining_stays = 0;
         shield = false;
-        dice_number=2;
+        dice_number = 2;
+        income_ratio = 1;
     }
 
     public IEnumerator RotateAdditionalDegrees(float additionalDegrees, float timeForRotate)
