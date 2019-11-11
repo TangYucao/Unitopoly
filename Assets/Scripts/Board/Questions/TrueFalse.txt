@@ -58,7 +58,7 @@ The DMV will charge a Vehicle Registration Fee annually.
 TRUE 10000
 Insurance is required on all vehicles operated or parked on California roadways.
 TRUE 10000
-Do I need to purchase auto insurance before buying my car?
+You need to purchase auto insurance before buying cars?
 TRUE 10000
 You must carry proof of insurance in your vehicle at all times.
 TRUE 10000
@@ -70,11 +70,135 @@ If you were in a car accident yesterday, you can buy insurance for it today.
 FALSE 10000
 you can be the insurance policyholder for your family member's car.
 FALSE 10000
+you cannot be the insurance policyholder for your family member's car.
+TRUE 10000
 Insurance has a lot of acronyms. PIP stands for Property insurance penalty.
 FALSE 10000
-The only coverage you must purchase is liability. 
+Insurance has a lot of acronyms. PIP stands for personal injury protection.
 TRUE 10000
+The only coverage you must purchase is liability.
+TRUE 10000
+You don't need to buy liability coverage.
+FALSE 10000
+You don't need to buy collisionn coverage.
+TRUE 10000
+You don't need to buy comprehensive coverage.
+TRUE 10000
+You must buy all three coverage of liability, collision and comprehensive.
+FALSE 10000
+The only coverages you must purchase are liability and collision.
+FALSE 10000
+The only coverage you must purchase is collision.
+FALSE 10000
+The only coverage you must purchase is comprehensive.
+FALSE 10000
 You should file a claim even if the accident wasn’t your fault?
 TRUE 10000
 You need to file a police report for vandalism to or theft of or from your vehicle.
 TRUE 10000
+Your friend borrows your car and crashes it. His insurance pays.
+FALSE 10000
+Liability pays for the property damage you do to others.
+TRUE 10000
+Liability pays for the injuries you do to others.
+TRUE 10000
+Liability will pay for damages to your own car.
+FALSE 10000
+Liability will pay for the injuries of yourself.
+FALSE 10000
+Liability will not pay for any damage to your own car.
+TRUE 10000
+Liability is a required coverage in California.
+TRUE 10000
+Liability pays for damage to your own car in a crash with another car or a fence.
+FALSE 10000
+Liability pays for damage to your own car in a crash with a fence.
+FALSE 10000
+Liability pays for damage to your own car hitting an animal.
+FALSE 10000
+Liability pays for damage to your own car after an object falls on your car.
+FALSE 10000
+Liability pays for damage to your own car due to vandalism.
+FALSE 10000
+Liability coverage pays out for car theft.
+FALSE 10000
+Collision pays for damage to your own car due to a crash.
+TRUE 10000
+Collision pays for damage to other people's car due to a crash.
+FALSE 10000
+Collision is a required coverage in California.
+FALSE 10000
+Collision is an optional coverage.
+TRUE 10000
+Collision pays for damage to your own car in a crash with another car or a fence.
+TRUE 10000
+Collision pays for damage to your own car in a crash with a fence.
+TRUE 10000
+Collision pays for damage to your own car hitting an animal.
+FALSE 10000
+Collision pays for damage to your own car after an object falls on your car.
+FALSE 10000
+Collision pays for damage to your own car due to vandalism.
+FALSE 10000
+Comprehensive coverage pays out for car theft.
+FALSE 10000
+Comprehensive pays for damage to your own car due to non-crash problems.
+TRUE 10000
+Comprehensive pays for damage to your own car due to crash problems.
+FALSE 10000
+Comprehensive pays for damage to your own car due to vandalism.
+TRUE 10000
+Comprehensive pays for damage to your own car due to hitting an animal.
+TRUE 10000
+Comprehensive pays for damage to your own car after an object falls on your car.
+TRUE 10000
+Comprehensive coverage pays out for car theft.
+TRUE 10000
+Comprehensive is a required coverage in California.
+FALSE 10000
+Comprehensive is an optional coverage.
+TRUE 10000
+I lent my car to my roommate. She rear-ended another vehicle, and crumpled its bumper. Thankfully no one was hurt and my roommate says her insurance will cover it, so I won’t have any costs.
+FALSE 10000
+Last night my car was sideswiped by someone driving a stolen car. The car’s actual owner will cover my damages, right?
+FALSE 10000
+I hit a deer and crumpled my headlight bucket and fender. I don’t have any collision coverage on the vehicle since it's an old heap. Will my comprehensive insurance cover me instead?
+TRUE 10000
+A bicyclist hit my car while I was waiting at a stoplight and dented my fender. She doesn't own a car or have any kind of car insurance. Can I still file a claim against her?
+TRUE 10000
+I'm leasing a car for the first time. The dealer is telling me I have to get something called gap insurance. I have collision coverage for all my cars. That's enough, right?
+FALSE 10000
+I booked my car rental with a credit card. I already have liability, collision and comprehensive car insurance. So I won't owe anything if I were to damage the car.
+FALSE 10000
+My daughter is going off to college across the country. She won't have a car. She’ll only need to borrow my car when she's home on break. Can I drop her from my policy?
+FALSE 10000
+When I got in my car this morning, I noticed that someone had smashed the side mirror overnight. No note or anything! I don’t have collision insurance on my car, but I do have uninsured motorist coverage. My state makes me buy it. Because it’s unlikely that I’ll ever find out who hit my car, can I file an uninsured motorist coverage claim?
+FALSE 10000
+A Policy Holder is an entity that owns the insurance company.
+TRUE 10000
+Insurance policy is a contract of insurance between an insurance company and the policy holder.
+TRUE 10000
+An insured is an entity covered by an insurance policy.
+TRUE 10000
+The amount the insured must pay before financial benefits are paid by the insurance company is called the deductible.
+TRUE 10000
+The cost of the insurance policy is called the premium.
+TRUE 10000
+Adding comp and collision gives you full coverage.
+FALSE 10000
+You just crashed … into a guardrail. But it wasn't your fault! You were driving safely and hit a patch of black ice. At least comprehensive coverage will pay for the repairs.
+FALSE 10000
+You're driving along, minding your own business, when a deer comes out of nowhere. Despite your catlike reflexes, you can't avoid an accident. And to top it off, the deer left your front end in shambles. Don't worry, your comprehensive coverage considered this possibility and will help you get back on the road in no time.
+TRUE 10000
+The accident with the deer did a lot of damage to your car, and it'll take a week to repair it. In the meantime, you need a rental car. Since it was a deer you collided with, your comprehensive coverage will kick in to pay for your rental car.
+FALSE 10000
+You swerve to avoid hitting the neighbor's dog in the middle of the street. The dog gets away unscathed (phew), but you and your car end up jumping the curb, crashing through your neighbor's fence, and landing in the shallow end of the swimming pool. Among other coverage considerations, your collision coverage will be there to help get your car back on the road.
+TRUE 10000
+One rainy afternoon you hydroplane and, alas, hit a tree. Your collision coverage will come to the rescue!
+TRUE 10000
+During a storm, a tree is knocked down by ferocious wind and falls onto your car. The entire roof is dented. Since the tree fell onto your car, your comprehensive coverage can help you get the dent fixed.
+TRUE 10000
+All collisions are covered under collision coverage.
+FALSE 10000
+You can save on your premium by lowering your comprehensive and collision limits.
+FALSE 10000
