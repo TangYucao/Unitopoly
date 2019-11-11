@@ -1,12 +1,552 @@
-﻿test1:what is the speed limit of highway?
-1.45 
-2.55 
-3.65 
-4.75
-3 5
-test2:what is the speed limit of local?
-1.25
-2.35
-3.45
-4.55
-3 10
+﻿Let’s say you’re driving down a road one night when suddenly a deer appears, and you hit it. What type of insurance pays for the repairs to your car?
+Gap insurance
+Comprehensive insurance
+Hit-and-run insurance
+None of the above
+2 20000
+What’s the name of the insurance that pays your medical bills if someone crashes into you and they don’t have auto insurance?
+Gap insurance
+Collision insurance
+Uninsured motorist coverage
+None of the above
+3 20000
+Which one of these is never a factor in car insurance rates?
+Where you went to college
+Your religion
+Your credit
+Whether you own a home
+2 20000
+Insurance has a lot of acronyms. Maybe too many. What’s PIP?
+Personal injury protection
+Private insurance for passengers
+Property insurance penalty
+Other
+1 20000
+Imagine your car slides on ice, hits a tree and has substantial front damage. What type of car insurance pays for repairs?
+Collision insurance
+Roadside assistance coverage
+Comprehensive insurance
+Other
+1 20000
+Fill in the blanks with the correct word choices: If you drive your friend’s car and crash it, (1) insurance will be tapped first to pay for damages and he will be (2).
+yours, happy
+yours, mad
+his, happy
+his, mad
+4 20000
+A tree falls on your car. Which coverage pays?
+Liability
+Collision
+Comprehensive
+None
+3 20000
+You hit someone else. Which coverage pays the other driver?
+Liability
+Collision
+Comprehensive
+None
+1 20000
+Your car is in a flood. Which coverage pays?
+Liability
+Collision
+Comprehensive
+None
+3 20000
+You drive off a cliff. Which coverage pays?
+Liability
+Collision
+Comprehensive
+None
+2 20000
+A boulder falls from the sky and hits your car. Which coverage pays?
+Liability
+Collision
+Comprehensive
+None
+3 20000
+Liability coverage pays for__________.
+theft, fire, vandalism, or other damage not related to an accident
+The accident related cost of repairing or replacing your vehicle.
+Damage or injury for which you are responsible.
+None of the above
+3 20000
+Collision coverage pays for__________.
+theft, fire, vandalism, or other damage not related to an accident
+The accident related cost of repairing or replacing your vehicle.
+Damage or injury for which you are responsible.
+None of the above
+2 20000
+Comprehensive coverage pays for__________.
+theft, fire, vandalism, or other damage not related to an accident
+The accident related cost of repairing or replacing your vehicle.
+Damage or injury for which you are responsible.
+None of the above
+1 20000
+If you are in an accident your auto insurance medical coverage handles _________.
+only people injured in your car
+anyone injured
+only people injured who were not in your car
+None of the above
+2 20000
+A higher deductible results in ________.
+a higher premium
+a lower premium
+tax savings
+None of the above
+2 20000
+Speeding tickets or accidents may result in _________.
+a higher premium
+a lower premium
+migraine headaches
+None of the above
+1 20000
+Safety features such as antitheft devices and automatic seat belts may result in a ________.
+a higher premium
+a lower premium
+higher resale value
+None of the above
+2 20000
+Taking a driver education class may result in a _________.
+a higher premium
+a lower premium
+later curfew
+None of the above
+2 20000
+“Comprehensive coverage” covers all but ____?
+Damage to your car from a collision
+Hitting/being hit by an animal
+Theft
+Natural Disasters
+1 20000
+What does “Bodily Injury (BI) Liability” cover?
+It covers your medical bills for all accidents whether or not you are the one legally responsible.
+It pays damages for people injured or killed in an accident for which you are legally responsible.
+It pays for damage to other people’s property resulting from an accident caused by your auto for which you are legally responsible.
+It covers you, your family, and your passengers, regardless of fault, if they are injured in an accident.
+2 20000
+Which of the following does NOT factor into your insurance premium?
+Driving experience and record
+Driver age
+Vehicle color
+Vehicle’s safety features
+3 20000
+What is “Accident Forgiveness”?
+When you get into an accident that isn’t your fault and your insurance company doesn’t change your rates.
+When you have two accidents within two months of each other and your insurance company forgives the second one.
+When you aren't surcharged for your first at-fault accident and you get to keep any of the good driver discounts you've earned.
+When you have an accident with another car and you both decide there isn’t enough damage to file claims.
+3 20000
+What is a “Personal Umbrella Policy”?
+It protects your car from flood damage.
+It allows you to use your liability from your auto policy on your home if your homeowners liability becomes exhausted and vice versa.
+It covers you and your passengers in an at-fault accident.
+It offers liability protection over and above your auto and homeowners policies up to the limit you chose.
+4 20000
+You let you your friend drive your car to a wedding in another state. While at the wedding, he backs up and hits another car. There is damage to both cars. Are you covered?
+No, because your friend is not on your policy.
+No, because the accident happened in another state.
+Yes, your insurance would cover the damage to both cars.
+Yes, but your insurance would only cover the damage to your car. Your friend will have to pay the other driver out-of-pocket.
+3 20000
+Auto insurance is:
+financial coverage for bodily damage or property damage
+helps pay medical bills
+helps make a down payment on a car
+a statement insuring that you own a vehicle
+1 20000
+Auto insurance is needed, because:
+every car owner needs one
+it keeps your car from wrecking
+it can reduce the financial aspect of a wreck
+it saves your car
+3 20000
+This insurance covers bodily damage from a wreck and/or property damage
+life insurance
+Home owner's insurance
+health insurance
+Auto insurance
+4 20000
+These are examples of bodily damage coverage in auto insurance
+pays medical bills in full
+uninsured motorist protection, bodily injury liability, and medical payments
+when you damage someone's property
+covers damage done to a vehicle and persons inside
+2 20000
+The two main parts in auto insurance are....
+protection for bodily injury and property damage
+protection for bodily injury and paying for a car
+getting a car and paying for a car
+getting a car and property damage
+1 20000
+What does property damage in auto insurance cover?
+Your vehicle no matter who is at fault
+Another person's property when YOU hit It
+Neither of two
+Both of two
+4 20000
+What is the insurance that pays for the cost of injuries to people involved in an accident and protects the insured against financial loss from lawsuits and other legal expenses incurred as a result of an accident?
+Medical Payment Coverage
+Bodily Insurance Liability
+"No Fault" Insurance
+None of the above
+2 20000
+What is the insurance that pays the medical expenses and the cost of health care of those in the insured's automobile that were injured, including the insured?
+Medical Payment Coverage
+Collision
+Bodily Insurance Liability
+None of the above
+1 20000
+What is the insurance that protects against financial loss, within limits, when the insured damages the property of others?
+Collision
+Comprehensive
+Property Damage Liability
+None of the above
+3 20000
+What is the insurance that covers the cost of injuries to the insured and his or her family if the insured is in a "hit and run" accident or in an accident with someone that does not have insurance, or when the other driver does not have adequate coverage for the damage caused to the insured?
+Collision Physical Damage
+Uninsured Motorist's protection
+"No Fault" Insurance
+None of the above
+2 20000
+What is the insurance in which an insured can collect medical expenses, lost wages and injury costs from their insurance company, as a means to expedite paying for damages until the process of determining fault is complete?
+"No Fault" Insurance
+Collision
+Both
+Neither
+1 20000
+Individuals unable to obtain insurance due to a poor driving record or accident, obtain insurance-albeit at high rates-through a state program whereby insurance companies must accept some such drivers. What is the program?
+Comprehensive
+Collision
+Assigned Risk Pool
+None of the above
+3 20000
+What kind of coverage pays for damages that are not caused by collisions?
+Comprehensive coverage
+Gap coverage
+Uninsured/Under-insured Motorist coverage
+No-fault coverage
+1 20000
+Approximately what percentage of drivers are uninsured at any given time?
+21%
+16%
+24%
+13%
+2 20000
+Which of these is NOT a factor that would affect your premium cost?
+Marital Status
+Age
+Extra options in the car
+Model of Car
+3 20000
+What is Collision coverage?
+Pays for damages if your car is stolen
+Pays for damages to another person's property because of an accident
+Pays for damages if your car hits another vehicle
+Pays for injuries sustained in an auto accident
+3 20000
+What kind of coverage is this: "exempts individuals from being liable for causing injury to another person or their property"?
+Comprehensive
+Property Damage
+No-fault
+Gap
+3 20000
+You are driving on the freeway. The vehicle in front of you is a large truck. You should:
+Stop instantly
+Drive closely behind the truck in bad weather because the driver can see farther ahead.
+Drive farther behind the truck than you would for a passenger vehicle.
+Drive no more than one car length behind the truck so the driver can see you.
+3 20000
+All of the following practices are dangerous to do while driving. Which of these is also illegal?
+Listening to music through headphones that cover both ears.
+Adjusting your outside mirrors.
+Transporting an unrestrained animal inside the vehicle.
+None of the above.
+1 20000
+Always stop before you cross railroad tracks when:
+You don't have room on the other side to completely cross the tracks.
+The railroad crossing is located in a city or town that has frequent train traffic.
+You transport two or more young children in a passenger vehicle.
+None of the above.
+1 20000
+When you tailgate other drivers (drive close to their rear bumper):
+You can frustrate the other drivers and make them angry.
+Your actions cannot result in a traffic citation.
+You help reduce traffic congestion.
+None of the above.
+1 20000
+Should you always drive slower than other traffic?
+No, you can block traffic when you drive too slowly.
+Yes, it is a good defensive driving technique.
+Yes, it is always safer than driving faster than other traffic.
+None of the above.
+1 20000
+You see a signal person at a road construction site ahead. You should obey his or her instructions:
+Only if you see orange cones on the road ahead.
+Unless they conflict with existing signs, signals, or laws.
+At all times.
+None of the above.
+3 20000
+When can you drive in a bike lane?
+During rush hour traffic if there are no bicyclists in the bike lane.
+When you are within 200 feet of a cross street where you plan to turn right.
+When you want to pass a driver ahead of you who is turning right.
+None of the above.
+2 20000
+You see a flashing yellow traffic signal at an upcoming intersection. The flashing yellow light means:
+Stop before entering the intersection as long as you can do so safely.
+Stop. Yield to all cross traffic before crossing the intersection.
+Slow down and cross the intersection carefully.
+None of the above.
+3 20000
+There is no crosswalk and you see a pedestrian crossing your lane ahead. You should:
+Make eye contact and then pass him/her.
+Slow down as you pass him/her.
+Stop and let him/her finish crossing the street.
+None of the above.
+3 20000
+A solid yellow line next to a broken yellow line means that vehicles:
+In both directions may pass.
+Next to the broken line may pass.
+Next to the solid line may pass.
+None of the above.
+2 20000
+It is a very windy day. You are driving and a dust storm blows across the freeway reducing your visibility. You should drive slower and turn on your:
+Interior lights.
+Parking lights.
+Headlights.
+None of the above.
+3 20000
+If you plan to pass another vehicle, you should:
+Not assume the other driver will make space for you to return to your lane.
+Assume the other driver will let you pass if you use your turn signal.
+Assume the other driver will maintain a constant speed.
+None of the above.
+1 20000
+You are driving on a freeway posted for 65 mph. Most of the other vehicles are driving 70 mph or faster. You may legally drive:
+70 mph or faster to keep up with the speed of traffic.
+Between 65 mph and 70 mph.
+No faster than 65 mph.
+None of the above.
+3 20000
+If you drive faster than other vehicles on a road with one lane in each direction and continually pass the other cars, you will:
+Get you to your destination much faster and safer.
+Increase your chances of an accident.
+Help prevent traffic congestion.
+None of the above.
+2 20000
+Which of these vehicles must always stop before crossing railroad tracks?
+Tank trucks marked with hazardous materials placards.
+Motor homes or pickup trucks towing a boat trailer.
+Any vehicle with 3 or more axles or weighing more than 4,000 pounds.
+None of the above.
+1 20000
+You are driving on a one-way street. You may turn left onto another one-way street only if:
+A sign permits the turn.
+Traffic on the street moves to the right.
+Traffic on the street moves to the left.
+None of the above.
+3 20000
+A large truck is ahead of you and is turning right onto a street with two lanes in each direction. The truck:
+May complete its turn in either of the two lanes.
+May have to swing wide to complete the right turn.
+Must stay in the right lane at all times while turning.
+None of the above.
+2 20000
+You may cross a double yellow line to pass another vehicle, if the yellow line next to:
+The other side of the road is a solid line.
+Your side of the road is a broken line.
+The other side of the road is a broken line.
+None of the above.
+2 20000
+At intersections, crosswalks, and railroad crossings, you should always:
+Stop, listen, and proceed cautiously.
+Look to the sides of your vehicle to see what is coming.
+Slowly pass vehicles that seem to be stopped for no reason.
+None of the above.
+2 20000
+You drive defensively when you:
+Always put one car length between you and the car ahead.
+Look only at the car in front of you while driving.
+Keep your eyes moving to look for possible hazards.
+None of the above.
+3 20000
+1. You may not park your vehicle:
+On the side of the freeway in an emergency.
+Next to a red painted curb.
+Within 100 feet of an elementary school.
+None of the above.
+2 20000
+2. You must notify the DMV within 5 days if you:
+Sell or transfer your vehicle.
+Fail a smog test for your vehicle.
+Get a new prescription for lenses or contacts.
+None of the above.
+1 20000
+3. Two sets of solid, double, yellow lines that are two or more feet apart:
+May be crossed to enter or exit a private driveway.
+May not be crossed for any reason.
+Should be treated as a separate traffic lane.
+None of the above.
+2 20000
+4. You want to make a right turn at an upcoming intersection. You should slow down and:
+Move toward the left side of your lane.
+Avoid driving in the bicycle lane.
+Signal for 100 feet before turning.
+None of the above.
+3 20000
+5. You are driving on a freeway posted for 65 MPH. The traffic is traveling at 70 MPH. You may legally drive:
+70 mph or faster to keep up with the speed of traffic.
+Between 65 mph and 70 mph.
+No faster than 65 mph.
+None of the above.
+3 20000
+6. It is illegal to park your vehicle:
+In an unmarked crosswalk.
+Within three feet of a private driveway.
+In a bicycle lane.
+None of the above.
+1 20000
+7. The safest precaution that you can take regarding the use of cellular phones and driving is:
+Use hands-free devices so you can keep both hands on the steering wheel.
+Keep your phone within easy reach so you won't need to take your eyes off the road.
+Review the number before answering a call.
+None of the above.
+1 20000
+8. If you have a green light, but traffic is blocking the intersection, you should:
+Stay out of the intersection until traffic clears.
+Enter the intersection and wait until traffic clears.
+Merge into another lane and try to go around the traffic.
+None of the above.
+1 20000
+9. You are getting ready to make a right turn. You should:
+Signal and turn immediately.
+Stop before entering the right lane and let all other traffic go first.
+Slow down or stop, if necessary, and then make the turn.
+None of the above.
+1 20000
+10. You must obey instructions from school crossing guards:
+At all times.
+Only during school hours.
+Unless you do not see any children present.
+None of the above.
+3 20000
+1. You are about to make a left turn. You must signal continuously during the last ____ feet before the turn.
+50
+75
+100
+150
+3 20000
+2. Which of the following statements about blind spots is true?
+They are eliminated if you have one outside mirror on each side of the vehicle.
+Large trucks have bigger blind spots than most passenger vehicles.
+Blind spots can be checked by looking in your rear view mirrors.
+None of the above.
+2 20000
+3. You have been involved in a minor traffic collision with a parked vehicle and you can't find the owner. You must:
+Leave a note on the vehicle.
+Report the accident without delay to the city police or, in unincorporated areas, to the CHP.
+Both of the above.
+None of the above.
+3 20000
+4. Unless otherwise posted the speed limit in a residential area is ____.
+20 mph
+25 mph
+30 mph
+35 mph
+2 20000
+5. You may legally block an intersection:
+When you entered the intersection on the green light.
+During rush hour traffic.
+Under no circumstances.
+None of the above.
+3 20000
+6. When parking uphill on a two-way street with no curb, your front wheels should be:
+Turned to the left (toward the street).
+Turned to the right (away from the street).
+Parallel with the pavement.
+None of the above.
+2 20000
+7. With a Class C drivers license a person may drive:
+A 3-axle vehicle if the Gross Vehicle Weight is less than 6,000 pounds.
+Any 3-axle vehicle regardless of the weight.
+A vehicle pulling two trailers.
+None of the above.
+1 20000
+8. To turn left from a multilane one-way street onto a one-way street, you should start your turn from:
+Any lane (as long as it is safe).
+The lane closest to the left curb.
+The lane in the center of the road.
+None of the above.
+2 20000
+9. If you are involved in a traffic collision, you are required to complete and submit a written report (SR1) to the DMV:
+Only if you or the other driver is injured.
+If there is property damage in excess of $1,000 or if there are any injuries.
+Only if you are at fault.
+None of the above.
+2 20000
+10. Roadways are the most slippery:
+During a heavy downpour.
+After it has been raining for awhile.
+The first rain after a dry spell.
+None of the above.
+3 20000
+1. You may drive off of the paved roadway to pass another vehicle:
+If the shoulder is wide enough to accommodate your vehicle.
+If the vehicle ahead of you is turning left.
+Under no circumstances.
+None of the above.
+3 20000
+2. You are approaching a railroad crossing with no warning devices and are unable to see 400 feet down the tracks in one direction. The speed limit is:
+15 mph.
+20 mph.
+25 mph.
+35 mph.
+1 20000
+3. When parking your vehicle parallel to the curb on a level street:
+Your front wheels must be turned toward the street.
+Your wheels must be within 18 inches of the curb.
+One of your rear wheels must touch the curb.
+None of the above.
+2 20000
+4. When you are merging onto the freeway, you should be driving:
+At or near the same speed as the traffic on the freeway.
+5 to 10 MPH slower than the traffic on the freeway.
+The posted speed limit for traffic on the freeway.
+None of the above.
+1 20000
+5. When driving in fog, you should use your:
+Fog lights only.
+High beams.
+Low beams.
+None of the above.
+3 20000
+6. A white painted curb means:
+Loading zone for freight or passengers.
+Loading zone for passengers or mail only.
+Loading zone for freight only.
+None of the above.
+2 20000
+7. A school bus ahead of you in your lane is stopped with red lights flashing. You should:
+Stop, then proceed when you think all of the children have exited the bus.
+Slow to 25 MPH and pass cautiously.
+Stop as long as the red lights are flashing.
+None of the above.
+3 20000
+8. California's "Basic Speed Law" says:
+You should never drive faster than posted speed limits.
+You should never drive faster than is safe for current conditions.
+The maximum speed limit in California is 70 mph on certain freeways.
+None of the above.
+2 20000
+9. You just sold your vehicle. You must notify the DMV within ___ days.
+5
+10
+15
+20
+1 20000
+10. To avoid last minute moves, you should be looking down the road to where your vehicle will be in about ______________.
+5 to 10 seconds
+10 to 15 seconds
+15 to 20 seconds
+20 to 25 seconds
+2 20000
