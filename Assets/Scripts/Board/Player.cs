@@ -6,6 +6,8 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
+    public enum CarCollectionsEnum { BenzG=0, Lamborghini, Bentley, Ferrari, RollsRoyce }
+    public GameObject current_module;
     private static int instantiatedPlayers = 0;
     // Shield protect player from bombing.
     public bool shield;
@@ -15,7 +17,7 @@ public class Player : MonoBehaviour
     public int dice_number;
     // Income ratio when they answer correctly.
     public int income_ratio;
-
+    public bool[] car_collections_bool;
     [HideInInspector] public List<Ownable> currentOwnables = new List<Ownable>();
     [SerializeField] public float yOffsetToTheGround;
 
@@ -88,8 +90,15 @@ public class Player : MonoBehaviour
         shield = false;
         dice_number = 2;
         income_ratio = 1;
+        car_collections_bool = new bool[5];
     }
-
+    public void PrintPlayerInfo()
+    {
+        Debug.Log("shield:" + shield +
+        "\n dice_number:" + dice_number +
+        "\n income_ration:" + income_ratio +
+        "\n");
+    }
     public IEnumerator RotateAdditionalDegrees(float additionalDegrees, float timeForRotate)
     {
         float progressionCoefficient = 0;
@@ -106,6 +115,7 @@ public class Player : MonoBehaviour
 
         // Finalize rotation.  
         transform.eulerAngles = new Vector3(transform.eulerAngles.x, startAngle + additionalDegrees, transform.eulerAngles.z);
+
     }
 
     public IEnumerator JumpToSpace(BoardLocation space, float timeForJump)
@@ -159,7 +169,7 @@ public class Player : MonoBehaviour
 
             // Rotate if we're on a corner space.  
             if (currentSpace is PassGo || currentSpace is GoToJail || currentSpace is InJail ||
-                currentSpace is FreeParking)
+                currentSpace is FreeParking| currentSpace is Shop)
             {
                 rotated = !rotated;
                 Debug.Log("[146}" + rotated);

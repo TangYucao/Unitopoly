@@ -16,7 +16,9 @@ public class Gameplay : MonoBehaviour
     private HashSet<string> module_used;
 
 
-    [SerializeField] private GameObject playerPrefab;
+    [SerializeField] public GameObject playerPrefab;
+    [SerializeField] public GameObject carPrefab;
+
 
     [SerializeField] private BalanceTracker[] balanceTrackers;
 
@@ -47,21 +49,26 @@ public class Gameplay : MonoBehaviour
                 break;
         }
         System.Random random = new System.Random();
-        int index = random.Next(1, 9);
+        int index = random.Next(1, 7);
         string car_module_name = "Car" + index.ToString();
         while (module_used.Contains(car_module_name))
         {
-            index = random.Next(1, 8);
+            index = random.Next(1, 7);
             car_module_name = "Car" + index.ToString();
         }
         module_used.Add(car_module_name);
         Debug.Log(car_module_name);
-        GameObject module = playerPrefab.transform.Find(car_module_name).gameObject;
-        Player newPlayer = ((GameObject)(Instantiate(module, new Vector3(0, module.GetComponent<Player>().yOffsetToTheGround, 0) + PassGo.instance.transform.position + placementOffsetVector, module.transform.rotation))).GetComponent<Player>();
-
+        GameObject module = carPrefab.transform.Find(car_module_name).gameObject;
+        GameObject current_module = ((GameObject)(Instantiate(module, new Vector3(0, 0, 0), module.transform.rotation)));
+        Player newPlayer = ((GameObject)(Instantiate(playerPrefab,
+         new Vector3(0, current_module.GetComponent<Module>().yOffsetToTheGround + 0.3f, 0) + PassGo.instance.transform.position + placementOffsetVector,
+         current_module.transform.rotation))).GetComponent<Player>();
         newPlayer.SetPlayerName(playerName);
         newPlayer.SetIsAI(ai);
-
+        newPlayer.current_module = current_module;
+        current_module.transform.parent = newPlayer.transform;
+        current_module.transform.position = newPlayer.transform.position;
+        newPlayer.transform.rotation = current_module.transform.rotation;
         players.Add(newPlayer);
         newPlayer.Initialize();
 
@@ -172,7 +179,12 @@ public class Gameplay : MonoBehaviour
                                 }
                                 else if (chosenAction == TurnActions.UserAction.TRADE)
                                 {
-                                    yield return ThiefUI.instance.Steal( players.IndexOf(player) );
+                                    yield return ThiefUI.instance.Steal(players.IndexOf(player));
+                                }
+                                else if (chosenAction == TurnActions.UserAction.MORTGAGE)
+                                {
+                                    yield return SwitchCarUI.instance.SwitchCar(players.IndexOf(player));
+                                    player.PrintPlayerInfo();
                                 }
 #else
                                 Debug.LogError("Not implemented >:(");
@@ -185,7 +197,6 @@ public class Gameplay : MonoBehaviour
                     // Roll dies.  
                     yield return DieRoller.instance.RollDie(player.dice_number);
                     int[] dieRollResults = DieRoller.instance.GetDieRollResults();
-                    Debug.Log("[184]" + dieRollResults.Sum());
                     // If roll a double, continue rolling
                     if (dieRollResults.Length != dieRollResults.Distinct().Count() && dieRollResults.Distinct().Count() == 1)
                     {
