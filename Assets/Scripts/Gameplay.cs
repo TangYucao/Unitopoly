@@ -1,4 +1,5 @@
 ﻿#define DEVELOP
+// #define DEMO
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -6,7 +7,11 @@ using System.Linq;
 using UnityEngine;
 static class Globals
 {
+#if DEMO
+    public static float DEVELOP_TIME = 0.3f;
+#else
     public static float DEVELOP_TIME = 0.1f;
+#endif
 }
 public class Gameplay : MonoBehaviour
 {
@@ -212,7 +217,7 @@ public class Gameplay : MonoBehaviour
                     {
                         doubles = false;
                     }
-#if DEVELOP
+#if DEVELOP && !DEMO
                     yield return player.MoveSpaces(3);
 #else
                     yield return player.MoveSpaces(dieRollResults.Sum());

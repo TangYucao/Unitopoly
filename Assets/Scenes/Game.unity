@@ -945,17 +945,20 @@ MonoBehaviour:
   m_GameObject: {fileID: 56784001}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2c5784203f5ec4eb4a01cf979f134361, type: 3}
+  m_Script: {fileID: 11500000, guid: 2d88c889b1e14456a829230ec7272c92, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   preceding: {fileID: 0}
   next: {fileID: 0}
-  propertyName: Leicester Square
-  purchasePrice: 260
-  mortgageValue: 150
-  deed: {fileID: 21300000, guid: f91d015f9490240b1af61be311a3c4c0, type: 3}
-  housePrice: 150
-  rentPrices: 160000006e0000004a01000020030000cf0300007e040000
+  text_asset: {fileID: 4900000, guid: 8a9367ebe4acc490e81de5c23059db45, type: 3}
+  deed: {fileID: 0}
+  question_value: 0
+  content: 
+  choice1: 
+  choice2: 
+  choice3: 
+  choice4: 
+  result: 0
 --- !u!4 &67389258 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4550394971055228, guid: 8634c6563b6864d4ea53f8c9588a3a0b,
@@ -1266,17 +1269,20 @@ MonoBehaviour:
   m_GameObject: {fileID: 83136500}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2c5784203f5ec4eb4a01cf979f134361, type: 3}
+  m_Script: {fileID: 11500000, guid: 2d88c889b1e14456a829230ec7272c92, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   preceding: {fileID: 0}
   next: {fileID: 0}
-  propertyName: Bow Street
-  purchasePrice: 180
-  mortgageValue: 90
-  deed: {fileID: 21300000, guid: c836f4f9212c7446aa55121ec747edea, type: 3}
-  housePrice: 100
-  rentPrices: 0e00000046000000c800000026020000ee020000b6030000
+  text_asset: {fileID: 4900000, guid: 8a9367ebe4acc490e81de5c23059db45, type: 3}
+  deed: {fileID: 0}
+  question_value: 0
+  content: 
+  choice1: 
+  choice2: 
+  choice3: 
+  choice4: 
+  result: 0
 --- !u!1 &83488623
 GameObject:
   m_ObjectHideFlags: 0
@@ -2070,17 +2076,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 133543586}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2c5784203f5ec4eb4a01cf979f134361, type: 3}
+  m_Script: {fileID: 11500000, guid: 5b4441370b452d34786c823211760c0e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   preceding: {fileID: 0}
   next: {fileID: 0}
-  propertyName: Old Kent Road
-  purchasePrice: 60
-  mortgageValue: 50
-  deed: {fileID: 21300000, guid: b720c42c8b1be46be9087825f71550af, type: 3}
-  housePrice: 30
-  rentPrices: 020000000a0000001e0000005a000000a0000000fa000000
+  text_asset: {fileID: 4900000, guid: 1b8811e9921efe44c926011bc0825f24, type: 3}
+  deed: {fileID: 0}
+  question_value: 0
+  content: 
+  result: 0
 --- !u!1 &135760946
 GameObject:
   m_ObjectHideFlags: 0
@@ -2462,17 +2467,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 153934236}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2c5784203f5ec4eb4a01cf979f134361, type: 3}
+  m_Script: {fileID: 11500000, guid: 5b4441370b452d34786c823211760c0e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   preceding: {fileID: 0}
   next: {fileID: 0}
-  propertyName: Oxford Street
-  purchasePrice: 300
-  mortgageValue: 200
-  deed: {fileID: 21300000, guid: 5f9fc81124dd04ba7bd436490497e67f, type: 3}
-  housePrice: 150
-  rentPrices: 1a0000008200000086010000840300004c040000fb040000
+  text_asset: {fileID: 4900000, guid: 1b8811e9921efe44c926011bc0825f24, type: 3}
+  deed: {fileID: 0}
+  question_value: 0
+  content: 
+  result: 0
 --- !u!1 &156020096
 GameObject:
   m_ObjectHideFlags: 0
@@ -3314,17 +3318,20 @@ MonoBehaviour:
   m_GameObject: {fileID: 241211944}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2c5784203f5ec4eb4a01cf979f134361, type: 3}
+  m_Script: {fileID: 11500000, guid: 2d88c889b1e14456a829230ec7272c92, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   preceding: {fileID: 0}
   next: {fileID: 0}
-  propertyName: Vine Street
-  purchasePrice: 200
-  mortgageValue: 100
-  deed: {fileID: 21300000, guid: e9a076f7a1bb84b0795ce665f43a52dc, type: 3}
-  housePrice: 100
-  rentPrices: 1000000050000000dc0000005802000020030000e8030000
+  text_asset: {fileID: 4900000, guid: 8a9367ebe4acc490e81de5c23059db45, type: 3}
+  deed: {fileID: 0}
+  question_value: 0
+  content: 
+  choice1: 
+  choice2: 
+  choice3: 
+  choice4: 
+  result: 0
 --- !u!1 &245840984
 GameObject:
   m_ObjectHideFlags: 0
@@ -3534,17 +3541,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 270985436}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2c5784203f5ec4eb4a01cf979f134361, type: 3}
+  m_Script: {fileID: 11500000, guid: 5b4441370b452d34786c823211760c0e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   preceding: {fileID: 0}
   next: {fileID: 0}
-  propertyName: Northumberland Avenue
-  purchasePrice: 160
-  mortgageValue: 80
-  deed: {fileID: 21300000, guid: abf897e4a4a444a71864266deabc789a, type: 3}
-  housePrice: 100
-  rentPrices: 0c0000003c000000b4000000f4010000bc02000084030000
+  text_asset: {fileID: 4900000, guid: 1b8811e9921efe44c926011bc0825f24, type: 3}
+  deed: {fileID: 0}
+  question_value: 0
+  content: 
+  result: 0
 --- !u!1 &277303970
 GameObject:
   m_ObjectHideFlags: 0
@@ -3881,17 +3887,20 @@ MonoBehaviour:
   m_GameObject: {fileID: 325284962}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2c5784203f5ec4eb4a01cf979f134361, type: 3}
+  m_Script: {fileID: 11500000, guid: 2d88c889b1e14456a829230ec7272c92, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   preceding: {fileID: 0}
   next: {fileID: 0}
-  propertyName: Pentonville Road
-  purchasePrice: 120
-  mortgageValue: 60
-  deed: {fileID: 21300000, guid: 4478ab098415743b09fa51d5ce5dd1a4, type: 3}
-  housePrice: 50
-  rentPrices: 0800000028000000640000002c010000c201000058020000
+  text_asset: {fileID: 4900000, guid: 8a9367ebe4acc490e81de5c23059db45, type: 3}
+  deed: {fileID: 0}
+  question_value: 0
+  content: 
+  choice1: 
+  choice2: 
+  choice3: 
+  choice4: 
+  result: 0
 --- !u!1 &326223736
 GameObject:
   m_ObjectHideFlags: 0
@@ -4544,17 +4553,20 @@ MonoBehaviour:
   m_GameObject: {fileID: 378026695}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2c5784203f5ec4eb4a01cf979f134361, type: 3}
+  m_Script: {fileID: 11500000, guid: 2d88c889b1e14456a829230ec7272c92, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   preceding: {fileID: 0}
   next: {fileID: 0}
-  propertyName: Mayfair
-  purchasePrice: 400
-  mortgageValue: 200
-  deed: {fileID: 21300000, guid: 9ef0cbeba8c0b44329669e2b3ea6939d, type: 3}
-  housePrice: 200
-  rentPrices: 32000000c80000005802000078050000a4060000d0070000
+  text_asset: {fileID: 4900000, guid: 8a9367ebe4acc490e81de5c23059db45, type: 3}
+  deed: {fileID: 0}
+  question_value: 0
+  content: 
+  choice1: 
+  choice2: 
+  choice3: 
+  choice4: 
+  result: 0
 --- !u!1 &380569476
 GameObject:
   m_ObjectHideFlags: 0
@@ -5004,17 +5016,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 443785874}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2c5784203f5ec4eb4a01cf979f134361, type: 3}
+  m_Script: {fileID: 11500000, guid: 5b4441370b452d34786c823211760c0e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   preceding: {fileID: 0}
   next: {fileID: 0}
-  propertyName: Bond Street
-  purchasePrice: 320
-  mortgageValue: 200
-  deed: {fileID: 21300000, guid: 911c0d809aeae4e5e859cdfb51fe148a, type: 3}
-  housePrice: 160
-  rentPrices: 1c00000096000000c2010000e8030000b004000078050000
+  text_asset: {fileID: 4900000, guid: 1b8811e9921efe44c926011bc0825f24, type: 3}
+  deed: {fileID: 0}
+  question_value: 0
+  content: 
+  result: 0
 --- !u!1 &449708260
 GameObject:
   m_ObjectHideFlags: 0
@@ -5354,17 +5365,20 @@ MonoBehaviour:
   m_GameObject: {fileID: 458628958}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2c5784203f5ec4eb4a01cf979f134361, type: 3}
+  m_Script: {fileID: 11500000, guid: 2d88c889b1e14456a829230ec7272c92, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   preceding: {fileID: 0}
   next: {fileID: 0}
-  propertyName: Park Lane
-  purchasePrice: 350
-  mortgageValue: 175
-  deed: {fileID: 21300000, guid: 9d707b3a2a6a34c0bb1dfc24dbd63bc1, type: 3}
-  housePrice: 200
-  rentPrices: 23000000af000000f40100004c04000014050000dc050000
+  text_asset: {fileID: 4900000, guid: 8a9367ebe4acc490e81de5c23059db45, type: 3}
+  deed: {fileID: 0}
+  question_value: 0
+  content: 
+  choice1: 
+  choice2: 
+  choice3: 
+  choice4: 
+  result: 0
 --- !u!1 &465167994
 GameObject:
   m_ObjectHideFlags: 0
@@ -7597,17 +7611,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 743161779}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2c5784203f5ec4eb4a01cf979f134361, type: 3}
+  m_Script: {fileID: 11500000, guid: 5b4441370b452d34786c823211760c0e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   preceding: {fileID: 0}
   next: {fileID: 0}
-  propertyName: Trafalgar Square
-  purchasePrice: 240
-  mortgageValue: 120
-  deed: {fileID: 21300000, guid: 217f83649750a4758b41a1ff6bee852d, type: 3}
-  housePrice: 150
-  rentPrices: 14000000640000002c010000ee0200009d0300004c040000
+  text_asset: {fileID: 4900000, guid: 1b8811e9921efe44c926011bc0825f24, type: 3}
+  deed: {fileID: 0}
+  question_value: 0
+  content: 
+  result: 0
 --- !u!1 &746361617
 GameObject:
   m_ObjectHideFlags: 0
@@ -7710,17 +7723,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 746361617}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2c5784203f5ec4eb4a01cf979f134361, type: 3}
+  m_Script: {fileID: 11500000, guid: 5b4441370b452d34786c823211760c0e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   preceding: {fileID: 0}
   next: {fileID: 0}
-  propertyName: Regent Street
-  purchasePrice: 300
-  mortgageValue: 200
-  deed: {fileID: 21300000, guid: e82d2fca780484b4fb4a8a2dbc94523f, type: 3}
-  housePrice: 150
-  rentPrices: 1a0000008200000086010000840300004c040000fb040000
+  text_asset: {fileID: 4900000, guid: 1b8811e9921efe44c926011bc0825f24, type: 3}
+  deed: {fileID: 0}
+  question_value: 0
+  content: 
+  result: 0
 --- !u!1 &763436678
 GameObject:
   m_ObjectHideFlags: 0
@@ -9297,17 +9309,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 876638168}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2c5784203f5ec4eb4a01cf979f134361, type: 3}
+  m_Script: {fileID: 11500000, guid: 5b4441370b452d34786c823211760c0e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   preceding: {fileID: 0}
   next: {fileID: 0}
-  propertyName: Whitehall
-  purchasePrice: 140
-  mortgageValue: 70
-  deed: {fileID: 21300000, guid: f2dd9947514a14260b6df18e98344bf7, type: 3}
-  housePrice: 100
-  rentPrices: 0a0000003200000096000000c201000071020000ee020000
+  text_asset: {fileID: 4900000, guid: 1b8811e9921efe44c926011bc0825f24, type: 3}
+  deed: {fileID: 0}
+  question_value: 0
+  content: 
+  result: 0
 --- !u!1 &900208735
 GameObject:
   m_ObjectHideFlags: 0
@@ -10059,17 +10070,20 @@ MonoBehaviour:
   m_GameObject: {fileID: 1021592183}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2c5784203f5ec4eb4a01cf979f134361, type: 3}
+  m_Script: {fileID: 11500000, guid: 2d88c889b1e14456a829230ec7272c92, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   preceding: {fileID: 0}
   next: {fileID: 0}
-  propertyName: Marlborough Street
-  purchasePrice: 180
-  mortgageValue: 90
-  deed: {fileID: 21300000, guid: 6d75e357543fb4a5cb38fe642d14574f, type: 3}
-  housePrice: 100
-  rentPrices: 0e00000046000000c800000026020000ee020000b6030000
+  text_asset: {fileID: 4900000, guid: 8a9367ebe4acc490e81de5c23059db45, type: 3}
+  deed: {fileID: 0}
+  question_value: 0
+  content: 
+  choice1: 
+  choice2: 
+  choice3: 
+  choice4: 
+  result: 0
 --- !u!1 &1030568874
 GameObject:
   m_ObjectHideFlags: 0
@@ -12594,17 +12608,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 1308763199}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2c5784203f5ec4eb4a01cf979f134361, type: 3}
+  m_Script: {fileID: 11500000, guid: 5b4441370b452d34786c823211760c0e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   preceding: {fileID: 0}
   next: {fileID: 0}
-  propertyName: Fleet Street
-  purchasePrice: 220
-  mortgageValue: 110
-  deed: {fileID: 21300000, guid: 242e2cb3ba9634187adc76a6c711d248, type: 3}
-  housePrice: 150
-  rentPrices: 120000005a000000fa000000bc0200006b0300001a040000
+  text_asset: {fileID: 4900000, guid: 1b8811e9921efe44c926011bc0825f24, type: 3}
+  deed: {fileID: 0}
+  question_value: 0
+  content: 
+  result: 0
 --- !u!1 &1315225744
 GameObject:
   m_ObjectHideFlags: 0
@@ -13138,17 +13151,20 @@ MonoBehaviour:
   m_GameObject: {fileID: 1382217122}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2c5784203f5ec4eb4a01cf979f134361, type: 3}
+  m_Script: {fileID: 11500000, guid: 2d88c889b1e14456a829230ec7272c92, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   preceding: {fileID: 0}
   next: {fileID: 0}
-  propertyName: Piccadilly
-  purchasePrice: 280
-  mortgageValue: 150
-  deed: {fileID: 21300000, guid: 23881047cacd04545883ff945178a221, type: 3}
-  housePrice: 140
-  rentPrices: 1600000078000000680100005203000001040000b0040000
+  text_asset: {fileID: 4900000, guid: 8a9367ebe4acc490e81de5c23059db45, type: 3}
+  deed: {fileID: 0}
+  question_value: 0
+  content: 
+  choice1: 
+  choice2: 
+  choice3: 
+  choice4: 
+  result: 0
 --- !u!1 &1394690112
 GameObject:
   m_ObjectHideFlags: 0
@@ -13886,17 +13902,20 @@ MonoBehaviour:
   m_GameObject: {fileID: 1460053408}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2c5784203f5ec4eb4a01cf979f134361, type: 3}
+  m_Script: {fileID: 11500000, guid: 2d88c889b1e14456a829230ec7272c92, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   preceding: {fileID: 0}
   next: {fileID: 0}
-  propertyName: Coventry Street
-  purchasePrice: 260
-  mortgageValue: 150
-  deed: {fileID: 21300000, guid: 92045aa7bca64487da76d7761768c2a2, type: 3}
-  housePrice: 150
-  rentPrices: 160000006e0000004a01000020030000cf0300007e040000
+  text_asset: {fileID: 4900000, guid: 8a9367ebe4acc490e81de5c23059db45, type: 3}
+  deed: {fileID: 0}
+  question_value: 0
+  content: 
+  choice1: 
+  choice2: 
+  choice3: 
+  choice4: 
+  result: 0
 --- !u!1 &1460379430
 GameObject:
   m_ObjectHideFlags: 0
@@ -14498,17 +14517,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 1514999676}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2c5784203f5ec4eb4a01cf979f134361, type: 3}
+  m_Script: {fileID: 11500000, guid: 5b4441370b452d34786c823211760c0e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   preceding: {fileID: 0}
   next: {fileID: 0}
-  propertyName: Strand
-  purchasePrice: 220
-  mortgageValue: 110
-  deed: {fileID: 21300000, guid: cc28e5b07fdcb43bf80f8094312eb3b8, type: 3}
-  housePrice: 150
-  rentPrices: 120000005a000000fa000000bc0200006b0300001a040000
+  text_asset: {fileID: 4900000, guid: 1b8811e9921efe44c926011bc0825f24, type: 3}
+  deed: {fileID: 0}
+  question_value: 0
+  content: 
+  result: 0
 --- !u!1 &1525378982
 GameObject:
   m_ObjectHideFlags: 0
@@ -14986,17 +15004,20 @@ MonoBehaviour:
   m_GameObject: {fileID: 1552839274}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2c5784203f5ec4eb4a01cf979f134361, type: 3}
+  m_Script: {fileID: 11500000, guid: 2d88c889b1e14456a829230ec7272c92, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   preceding: {fileID: 0}
   next: {fileID: 0}
-  propertyName: Euston Road
-  purchasePrice: 100
-  mortgageValue: 50
-  deed: {fileID: 21300000, guid: de3e37e647df04e37a56ab4e6454b76a, type: 3}
-  housePrice: 50
-  rentPrices: 060000001e0000005a0000000e0100009001000026020000
+  text_asset: {fileID: 4900000, guid: 8a9367ebe4acc490e81de5c23059db45, type: 3}
+  deed: {fileID: 0}
+  question_value: 0
+  content: 
+  choice1: 
+  choice2: 
+  choice3: 
+  choice4: 
+  result: 0
 --- !u!1 &1563162224
 GameObject:
   m_ObjectHideFlags: 0
@@ -16485,17 +16506,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 1710297274}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2c5784203f5ec4eb4a01cf979f134361, type: 3}
+  m_Script: {fileID: 11500000, guid: 5b4441370b452d34786c823211760c0e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   preceding: {fileID: 0}
   next: {fileID: 0}
-  propertyName: Pall Mall
-  purchasePrice: 140
-  mortgageValue: 70
-  deed: {fileID: 21300000, guid: eae5cce13dabd451fa2f8d6ef09f8c1d, type: 3}
-  housePrice: 100
-  rentPrices: 0a0000003200000096000000c201000071020000ee020000
+  text_asset: {fileID: 4900000, guid: 1b8811e9921efe44c926011bc0825f24, type: 3}
+  deed: {fileID: 0}
+  question_value: 0
+  content: 
+  result: 0
 --- !u!1 &1723354707
 GameObject:
   m_ObjectHideFlags: 0

@@ -1,5 +1,4 @@
 ﻿// This is for selection UI. Data should be retrieved from database or static data like txt or csv.
-#define DEVELOP
 using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;

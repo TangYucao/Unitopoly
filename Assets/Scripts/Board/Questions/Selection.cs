@@ -23,19 +23,30 @@ public class Selection : BoardLocation
     {
         int size = lines.Length;
         System.Random random = new System.Random();
-        int index = random.Next(1, size);
-        // Debug.Log(index);
-        while (lines[index].Length < 5 || lines[index].Substring(0,4) != "test")
+        int index = random.Next(10, size);
+        Debug.Log(index);
+        while (true)
         {
+            int index_of_space_in_line=lines[index+5].IndexOf(" ",0);
+            if(index_of_space_in_line<0) 
+            {
+                index--;
+                continue;
+            }
+            string answer=lines[index + 5].Substring(0,index_of_space_in_line);
+            Debug.Log("[31]:"+answer);
+            string score=lines[index + 5].Substring(index_of_space_in_line);
+
+            if(int.TryParse(lines[index + 5].Substring(0,index_of_space_in_line), out this.result)&&
+            int.TryParse(lines[index + 5].Substring(index_of_space_in_line), out this.question_value))  
+                break;
             index--;
         }
-        this.result = (int)char.GetNumericValue(lines[index + 5][0]);
         this.content = lines[index];
         choice1 = lines[index + 1];
         choice2 = lines[index + 2];
         choice3 = lines[index + 3];
         choice4 = lines[index + 4];
-        this.question_value = Int32.Parse(lines[index + 5].Substring(lines[index + 5].IndexOf(" ", 0)));
     }
     public override IEnumerator LandOn(Player player)
     {
@@ -50,6 +61,12 @@ public class Selection : BoardLocation
             if (SelectionUI.instance.result_selection == this.result)
             {
                 player.AdjustBalanceBy(question_value);
+                yield return MessageAlert.instance.DisplayAlert(player.GetPlayerName() + " is correct. Get "+question_value+" point", Color.green);
+            }
+            else
+            {
+                yield return MessageAlert.instance.DisplayAlert(player.GetPlayerName() + " is wrong. Answer shoud be choice "+this.result, Color.red);
+
             }
 
             yield return LerpCameraViewToThisLocationWhenPass();
