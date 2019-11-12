@@ -10186,11 +10186,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 1030568874}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6aebfb2c6e0494095872fed2a91eaf32, type: 3}
+  m_Script: {fileID: 11500000, guid: 50a1c562d4dd448caafddb8779753d90, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  preceding: {fileID: 0}
-  next: {fileID: 0}
+  preceding: {fileID: 325284967}
+  next: {fileID: 1710297279}
+  text_asset: {fileID: 0}
+  deed: {fileID: 0}
 --- !u!1 &1036961791
 GameObject:
   m_ObjectHideFlags: 0
