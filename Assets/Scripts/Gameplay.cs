@@ -1,5 +1,5 @@
 ﻿#define DEVELOP
-#define DEMO
+// #define DEMO
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -218,7 +218,7 @@ public class Gameplay : MonoBehaviour
                         doubles = false;
                     }
 #if DEVELOP && !DEMO
-                    yield return player.MoveSpaces(3);
+                    yield return player.MoveSpaces(10);
 #else
                     yield return player.MoveSpaces(dieRollResults.Sum());
 #endif

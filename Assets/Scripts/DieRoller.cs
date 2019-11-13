@@ -28,6 +28,7 @@ public class DieRoller : MonoBehaviour
 
     public IEnumerator RollDie(int dice_number)
     {
+        //bug
         for (int i = 0; i < transform.childCount&&i<dice_number; i++)
         {
             transform.GetChild(i).gameObject.SetActive(true);
