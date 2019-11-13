@@ -28,9 +28,13 @@ public class DieRoller : MonoBehaviour
 
     public IEnumerator RollDie(int dice_number)
     {
-        //bug
-        for (int i = 0; i < transform.childCount&&i<dice_number; i++)
+        for (int i = 0; i < transform.childCount; i++)
         {
+            if(i>=dice_number)
+            {
+                transform.GetChild(i).gameObject.SetActive(false);
+                continue;
+            }
             transform.GetChild(i).gameObject.SetActive(true);
             transform.GetChild(i).transform.position = initialDiePositions[i];
             transform.GetChild(i).transform.rotation = UnityEngine.Random.rotation;
