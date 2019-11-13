@@ -1,5 +1,5 @@
 ﻿#define DEVELOP
-// #define DEMO
+#define DEMO
 using System;
 using System.Collections;
 using System.Collections.Generic;
