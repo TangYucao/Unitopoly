@@ -15,7 +15,12 @@ public class Player : MonoBehaviour
     public int remaining_stays;
     // After upgrade, dice can be 3 or more. Init is 2. 
     public int dice_number;
+    // Remainging bombs that kill. Words can kill.
+    public int bombs;
+    public int thieves;
+
     // Income ratio when they answer correctly.
+
     public int income_ratio;
     public bool[] car_collections_bool;
     [HideInInspector] public List<Ownable> currentOwnables = new List<Ownable>();
@@ -25,6 +30,21 @@ public class Player : MonoBehaviour
 
     private string playerName;
     public bool rotated;
+    public void BuyNewCar(Player.CarCollectionsEnum car_type)
+    {
+
+        car_collections_bool[(int)car_type] = true;
+
+    }
+    public void BuyBomb()
+    {
+        this.bombs++;
+    }
+    public void BuyThieves()
+    {
+        this.thieves++;
+    }
+
     public void SetPlayerName(string playerName)
     {
         this.playerName = playerName;
@@ -56,7 +76,7 @@ public class Player : MonoBehaviour
     }
 
     // Money
-    private int accountBalance = 1500;
+    private int accountBalance;
     public Vector3 costumeOffset;
 
     public void AdjustBalanceBy(int balance)
@@ -91,6 +111,9 @@ public class Player : MonoBehaviour
         dice_number = 2;
         income_ratio = 1;
         car_collections_bool = new bool[5];
+        accountBalance = 100000;
+        bombs = 0;
+        thieves = 0;
     }
     public void PrintPlayerInfo()
     {

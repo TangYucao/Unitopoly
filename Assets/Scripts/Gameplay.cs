@@ -1,5 +1,5 @@
 ﻿#define DEVELOP
-#define DEMO
+// #define DEMO
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -180,11 +180,28 @@ public class Gameplay : MonoBehaviour
 #if DEVELOP
                                 if (chosenAction == TurnActions.UserAction.BUILD)
                                 {
-                                    yield return BombUI.instance.Bomb(3);
+                                    if (player.bombs > 0)
+                                    {
+                                        player.bombs--;
+                                        yield return BombUI.instance.Bomb(3);
+                                    }
+                                    else
+                                    {
+                                        yield return MessageAlert.instance.DisplayAlert(player.GetPlayerName() + " doesn't have any bomb. ", Color.yellow);
+                                    }
                                 }
                                 else if (chosenAction == TurnActions.UserAction.TRADE)
                                 {
-                                    yield return ThiefUI.instance.Steal(players.IndexOf(player));
+                                    if (player.thieves > 0)
+                                    {
+                                        player.thieves--;
+                                        yield return ThiefUI.instance.Steal(players.IndexOf(player));
+
+                                    }
+                                    else
+                                    {
+                                        yield return MessageAlert.instance.DisplayAlert(player.GetPlayerName() + " doesn't have any thieves. ", Color.yellow);
+                                    }
                                 }
                                 else if (chosenAction == TurnActions.UserAction.MORTGAGE)
                                 {
@@ -218,7 +235,7 @@ public class Gameplay : MonoBehaviour
                         doubles = false;
                     }
 #if DEVELOP && !DEMO
-                    yield return player.MoveSpaces(10);
+                    yield return player.MoveSpaces(3);
 #else
                     yield return player.MoveSpaces(dieRollResults.Sum());
 #endif

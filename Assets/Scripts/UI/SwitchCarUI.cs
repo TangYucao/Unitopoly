@@ -25,24 +25,41 @@ public class SwitchCarUI : MonoBehaviour
         Player player = Gameplay.instance.GetPlayers()[player_index];
         while (!selection_made || !valid)
         {
+            if (result_selection == 6)
+            {
+                transform.GetChild(0).gameObject.SetActive(false);
+                yield break;
+            }
             int bool_index = result_selection - 1;
             // // No choice been made.
             // if (bool_index < 0)
             // {
             //     break;
             // }
-            if (bool_index >= 0 && player.car_collections_bool[bool_index])
+            if (bool_index >= 0)
             {
-                selection_made = false;
-                car_type = (Player.CarCollectionsEnum)bool_index;
-                yield return MessageAlert.instance.DisplayAlert(player.GetPlayerName() + " switch to " + car_type.ToString() + " failed.", Color.red);
+                Debug.Log(player.car_collections_bool[bool_index]);
+                if (player.car_collections_bool[bool_index])
+                {
+                    valid = true;
+                }
+                else
+                {
+                    car_type = (Player.CarCollectionsEnum)bool_index;
+                    selection_made = false;
+                    // yield return MessageAlert.instance.DisplayAlert(player.GetPlayerName() + " switch to " + car_type.ToString() + " failed.", Color.red);
+                }
             }
             else
             {
-                valid = true;
+                selection_made = false;
+                valid = false;
+
             }
             yield return null;
         }
+                Debug.Log("[61]");
+
         transform.GetChild(0).gameObject.SetActive(false);
         car_type = (Player.CarCollectionsEnum)result_selection - 1;
         switch (car_type)
@@ -76,10 +93,10 @@ public class SwitchCarUI : MonoBehaviour
         yield return MessageAlert.instance.DisplayAlert(player.GetPlayerName() + " switch to " + car_type.ToString() + ".", Color.green);
         GameObject module = Gameplay.instance.carPrefab.transform.Find(car_module_name).gameObject;
         GameObject new_module = ((GameObject)(Instantiate(module, new Vector3(0, 0, 0), module.transform.rotation)));
-         Destroy(player.current_module);
+        Destroy(player.current_module);
         new_module.transform.parent = player.transform;
         new_module.transform.position = player.transform.position;
-        player.transform.rotation.Set( player.transform.rotation.x, player.transform.rotation.y, player.transform.rotation.z, player.transform.rotation.w);
+        player.transform.rotation.Set(player.transform.rotation.x, player.transform.rotation.y, player.transform.rotation.z, player.transform.rotation.w);
         player.current_module = new_module;
 
 
@@ -118,6 +135,12 @@ public class SwitchCarUI : MonoBehaviour
     public void Select5()
     {
         result_selection = 5;
+        selection_made = true;
+        car_module_name = "Phantom";
+    }
+    public void SelectClose()
+    {
+        result_selection = 6;
         selection_made = true;
         car_module_name = "Phantom";
     }
