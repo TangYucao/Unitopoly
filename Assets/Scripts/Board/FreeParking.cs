@@ -10,7 +10,8 @@ public class FreeParking : BoardLocation
 
     public override IEnumerator LandOn(Player player)
     {       
-        yield return MessageAlert.instance.DisplayAlert("You got M20 for landing on Free Parking!", Color.cyan);
-        player.AdjustBalanceBy(20);
+        yield return MessageAlert.instance.DisplayAlert("You got M10000 for landing on Free Parking!", Color.cyan);
+        player.remaining_stays++;
+        player.AdjustBalanceBy(10000);
     }
 }

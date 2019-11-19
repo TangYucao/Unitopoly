@@ -8,7 +8,7 @@ public abstract class Ownable : BoardLocation
 
     [SerializeField] private string propertyName;
     [SerializeField] private int purchasePrice;
-    [SerializeField] private int mortgageValue;
+    [SerializeField] protected int charge_value;
     [SerializeField] public Sprite deed;
     
     public sealed override void PassBy(Player player)

@@ -9,8 +9,8 @@ public class Utility : Ownable
 
 	protected override int ChargePlayer()
 	{
-		int toCharge = DieRoller.instance.GetDieRollResults().Sum();
-		toCharge *= (otherUtility.owner == owner ? 10 : 4);
+		// int toCharge = DieRoller.instance.GetDieRollResults().Sum();
+		int toCharge = (int)(charge_value*(otherUtility.owner == owner ? 1 : 0.5));
 
 		return toCharge;
 	}

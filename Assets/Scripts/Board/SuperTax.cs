@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SuperTax : BoardLocation 
+public class SuperTax : BoardLocation
 {
     public override void PassBy(Player player)
     {
@@ -10,7 +10,7 @@ public class SuperTax : BoardLocation
 
     public override IEnumerator LandOn(Player player)
     {
-        yield return MessageAlert.instance.DisplayAlert("Super Tax!  Pay M100.", Color.red);
-        player.AdjustBalanceBy(-100);
+        yield return MessageAlert.instance.DisplayAlert("DMV Service!  Pay M10000.", Color.red);
+        player.AdjustBalanceBy(-10000);
     }
 }

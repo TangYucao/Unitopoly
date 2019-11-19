@@ -10,7 +10,7 @@ public class Railroad : Ownable
     protected override int ChargePlayer()
     {
         // Determine how much to charge.  
-        int toCharge = 25;
+        int toCharge = this.charge_value;
         foreach (Railroad railroad in otherRailroads)
             if (railroad.owner == owner)
                 toCharge *= 2;

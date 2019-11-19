@@ -3031,8 +3031,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -299, y: 0}
-  m_SizeDelta: {x: -250, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &222598510
 MonoBehaviour:
@@ -6309,8 +6309,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -299, y: 0}
-  m_SizeDelta: {x: -250, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &507637757
 MonoBehaviour:
@@ -7065,8 +7065,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -299, y: 0}
-  m_SizeDelta: {x: -250, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &599157067
 MonoBehaviour:
@@ -7892,8 +7892,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.4, y: 0.25}
   m_AnchorMax: {x: 0.6, y: 0.75}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 49.2, y: 0}
+  m_SizeDelta: {x: 177.2, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &730053804
 MonoBehaviour:
@@ -8559,27 +8559,17 @@ MonoBehaviour:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
     m_FontSize: 14
     m_FontStyle: 0
-    m_BestFit: 0
+    m_BestFit: 1
     m_MinSize: 0
-    m_MaxSize: 40
-    m_Alignment: 4
+    m_MaxSize: 26
+    m_Alignment: 1
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: ' Text New Text New Text  New Text New Text  New Text  New Text New Text
-    New Text  New Text  Text New Text New Text  New Text New Text  New Text  New Text
-    New Text New Text  New Text  Text New Text New Text  New Text New Text  New Text  New
-    Text New Text New Text  New Text  Text New Text New Text  New Text New Text  New
-    Text  New Text New Text New Text  New Text  Text New Text New Text  New Text New
-    Text  New Text  New Text New Text New Text  New Text  Text New Text New Text  New
-    Text New Text  New Text  New Text New Text New Text  New Text  Text New Text New
-    Text  New Text New Text  New Text  New Text New Text New Text  New Text  Text
-    New Text New Text  New Text New Text  New Text  New Text New Text New Text  New
-    Text  Text New Text New Text  New Text New Text  New Text  New Text New Text New
-    Text  New Text  Text New Text New Text  New Text New Text  New Text  New Text
-    New Text New Text  New Text '
+  m_Text: 'text text text text text text text text text text text text text text text
+    text text text text text text text text text text '
 --- !u!222 &781608148
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -8604,8 +8594,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.00011189779, y: 0}
-  m_SizeDelta: {x: 300, y: 300}
+  m_AnchoredPosition: {x: -0.000012398, y: 0}
+  m_SizeDelta: {x: 259.9, y: 425}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &784162453
 GameObject:
@@ -13029,8 +13019,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.00013351, y: 0}
-  m_SizeDelta: {x: 245.2, y: 429}
+  m_AnchoredPosition: {x: 0.00012207, y: 2.6248}
+  m_SizeDelta: {x: 193.2, y: 419.75}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1242741743
 MonoBehaviour:
@@ -19424,8 +19414,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -299, y: 0}
-  m_SizeDelta: {x: -250, y: 0}
+  m_AnchoredPosition: {x: -208.75, y: 0}
+  m_SizeDelta: {x: -417.5, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1943748415
 MonoBehaviour:

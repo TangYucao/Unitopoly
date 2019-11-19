@@ -16,7 +16,7 @@ public class PassGo : BoardLocation
         player.timesPastGo++;
 
         if (player.timesPastGo > 1)
-            player.AdjustBalanceBy(200);
+            player.AdjustBalanceBy(50000);
     }
 
     public override IEnumerator LandOn(Player player)

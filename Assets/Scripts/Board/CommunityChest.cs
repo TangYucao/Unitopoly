@@ -11,8 +11,8 @@ public class CommunityChest : BoardLocation
 
     public override IEnumerator LandOn(Player player)
     {
-        Debug.Log("Landed on community chest");
-
+        yield return MessageAlert.instance.DisplayAlert("Car Community Chest! Get M2000.", Color.green);
+        player.AdjustBalanceBy(2000);
         yield return null;
     }
 }

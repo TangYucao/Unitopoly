@@ -8,7 +8,7 @@ public class DieRoller : MonoBehaviour
 
     private Vector3[] initialDiePositions;
 
-    private int[] dieRollResults;
+    public int[] dieRollResults;
     public int[] GetDieRollResults()
     {
         return dieRollResults;

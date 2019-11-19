@@ -10,7 +10,7 @@ public class IncomeTax : BoardLocation
 
     public override IEnumerator LandOn(Player player)
     {
-        yield return MessageAlert.instance.DisplayAlert("Income tax!  Pay M200.", Color.red);
-        player.AdjustBalanceBy(-200);
+        yield return MessageAlert.instance.DisplayAlert("Fill gas!  Pay M2000.", Color.red);
+        player.AdjustBalanceBy(-2000);
     }
 }
