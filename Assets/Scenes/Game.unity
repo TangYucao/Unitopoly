@@ -3284,9 +3284,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   preceding: {fileID: 0}
   next: {fileID: 0}
-  propertyName: Marylebone Station
-  purchasePrice: 200
-  mortgageValue: 100
+  propertyName: Marylebone Station Parking
+  purchasePrice: 10000
+  charge_value: 3000
   deed: {fileID: 21300000, guid: 3604e6ba61b93428387011b69c87959b, type: 3}
   otherRailroads:
   - {fileID: 1351693751}
@@ -4305,8 +4305,8 @@ MonoBehaviour:
   preceding: {fileID: 0}
   next: {fileID: 0}
   propertyName: Electric Company
-  purchasePrice: 150
-  mortgageValue: 75
+  purchasePrice: 5000
+  charge_value: 5000
   deed: {fileID: 21300000, guid: 0294a0252fe1044f089546cb603cbdce, type: 3}
   otherUtility: {fileID: 449708265}
 --- !u!1001 &353644619
@@ -5764,8 +5764,8 @@ MonoBehaviour:
   preceding: {fileID: 0}
   next: {fileID: 0}
   propertyName: Water Works
-  purchasePrice: 150
-  mortgageValue: 75
+  purchasePrice: 5000
+  charge_value: 5000
   deed: {fileID: 21300000, guid: 76b621ae567a34750b43af72ec8d0e4b, type: 3}
   otherUtility: {fileID: 350997904}
 --- !u!1 &457214646
@@ -8262,8 +8262,8 @@ MonoBehaviour:
   preceding: {fileID: 0}
   next: {fileID: 0}
   propertyName: Liverpool St. Station
-  purchasePrice: 200
-  mortgageValue: 100
+  purchasePrice: 10000
+  charge_value: 3000
   deed: {fileID: 21300000, guid: 62fcf104a733941e79319e3b78abebc4, type: 3}
   otherRailroads:
   - {fileID: 1351693751}
@@ -12320,8 +12320,8 @@ MonoBehaviour:
   preceding: {fileID: 0}
   next: {fileID: 0}
   propertyName: Fenchurch St. Station
-  purchasePrice: 200
-  mortgageValue: 100
+  purchasePrice: 10000
+  charge_value: 3000
   deed: {fileID: 21300000, guid: 75638f7ab9cbe4d979d12ae83b20e721, type: 3}
   otherRailroads:
   - {fileID: 1351693751}
@@ -13917,9 +13917,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   preceding: {fileID: 0}
   next: {fileID: 0}
-  propertyName: Kings Cross Station
-  purchasePrice: 200
-  mortgageValue: 100
+  propertyName: Kings Cross Station Parking
+  purchasePrice: 10000
+  charge_value: 3000
   deed: {fileID: 21300000, guid: a29282810acaa4690b6367c4f6000a83, type: 3}
   otherRailroads:
   - {fileID: 240120989}
@@ -20523,6 +20523,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ae83475a5aab4d44b0a5b23a47db033, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  dieRollResults: 
 --- !u!4 &2069463532
 Transform:
   m_ObjectHideFlags: 0
