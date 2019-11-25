@@ -6,7 +6,7 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    public enum CarCollectionsEnum { BenzG=0, Lamborghini, Bentley, Ferrari, RollsRoyce }
+    public enum CarCollectionsEnum { BenzG = 0, Lamborghini, Bentley, Ferrari, RollsRoyce }
     public GameObject current_module;
     private static int instantiatedPlayers = 0;
     // Shield protect player from bombing.
@@ -186,13 +186,13 @@ public class Player : MonoBehaviour
             float timeForJump = .9f * (Mathf.Sqrt((i * 1.0f) / spaces + .8f) - .35f);
 #endif
             //TODO MARK:CHANGE CAMERA VIEW
-            yield return currentSpace.LerpCameraViewToThisLocationWhenPass();
+            yield return currentSpace.LerpCameraViewToThisLocation();
 
             yield return JumpToSpace(targetSpace, timeForJump);
 
             // Rotate if we're on a corner space.  
             if (currentSpace is PassGo || currentSpace is GoToJail || currentSpace is InJail ||
-                currentSpace is FreeParking| currentSpace is Shop)
+                currentSpace is FreeParking | currentSpace is Shop)
             {
                 rotated = !rotated;
                 Debug.Log("[146}" + rotated);
@@ -206,5 +206,6 @@ public class Player : MonoBehaviour
 
         // Tell the space we ended on that we landed on it.  
         yield return currentSpace.LandOn(this);
+        yield return currentSpace.LerpCameraViewToThisLocationWhenPass();
     }
 }

@@ -235,7 +235,11 @@ public class Gameplay : MonoBehaviour
                         doubles = false;
                     }
 #if DEVELOP && !DEMO
-                    yield return player.MoveSpaces(3);
+                    if (i == 0 || i == 1)
+                        yield return player.MoveSpaces(3);
+                    else
+                        yield return player.MoveSpaces(4);
+
 #else
                     yield return player.MoveSpaces(dieRollResults.Sum());
 #endif
