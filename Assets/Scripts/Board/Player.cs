@@ -111,7 +111,7 @@ public class Player : MonoBehaviour
         dice_number = 2;
         income_ratio = 1;
         car_collections_bool = new bool[5];
-        accountBalance = 100000;
+        accountBalance = 100000000;
         bombs = 0;
         thieves = 0;
     }

@@ -22,11 +22,18 @@ public class ShopScrollList : MonoBehaviour {
     // public GameObject shop;
     public Button bomb;
     public Button thief;
+    public Button BenzG;
+    public Button Lamborghini;
+    public Button Bentley;
+    public Button Ferrari;
+    public Button RollsRoyce;
     private static int bombPrice = 50000;
     private static int thiefPrice = 50000;
-    // public Text myItemDisplay;
-    // public SimpleObjectPool buttonObjectPool;
-    // public PurchaseConfirmationUI purchaseConfirmationUI;
+    private static int BenzGPrice = 150000;
+    private static int LamborghiniPrice = 250000;
+    private static int BentleyPrice = 300000;
+    private static int FerrariPrice = 350000;
+    private static int RollsRoycePrice = 500000;
 
     public float gold;
 
@@ -79,9 +86,79 @@ public class ShopScrollList : MonoBehaviour {
     {
         if (gold >= thiefPrice) 
         {
-            itemSelection = 1;
+            itemSelection = 2;
             gold -= thiefPrice;
             thief.gameObject.SetActive(false);
+            myGoldDisplay.text = "Current Balance: " + gold.ToString ();
+
+            Debug.Log ("enough gold");
+
+        }
+        Debug.Log ("attempted");
+    }
+    public void SelectBenzG()
+    {
+        if (gold >= BenzGPrice) 
+        {
+            itemSelection = 3;
+            gold -= BenzGPrice;
+            BenzG.gameObject.SetActive(false);
+            myGoldDisplay.text = "Current Balance: " + gold.ToString ();
+
+            Debug.Log ("enough gold");
+
+        }
+        Debug.Log ("attempted");
+    }
+    public void SelectLamborghini()
+    {
+        if (gold >= LamborghiniPrice) 
+        {
+            itemSelection = 4;
+            gold -= LamborghiniPrice;
+            Lamborghini.gameObject.SetActive(false);
+            myGoldDisplay.text = "Current Balance: " + gold.ToString ();
+
+            Debug.Log ("enough gold");
+
+        }
+        Debug.Log ("attempted");
+    }
+    public void SelectBentley()
+    {
+        if (gold >= BentleyPrice) 
+        {
+            itemSelection = 5;
+            gold -= BentleyPrice;
+            Bentley.gameObject.SetActive(false);
+            myGoldDisplay.text = "Current Balance: " + gold.ToString ();
+
+            Debug.Log ("enough gold");
+
+        }
+        Debug.Log ("attempted");
+    }
+    public void SelectFerrari()
+    {
+        if (gold >= FerrariPrice) 
+        {
+            itemSelection = 6;
+            gold -= FerrariPrice;
+            Ferrari.gameObject.SetActive(false);
+            myGoldDisplay.text = "Current Balance: " + gold.ToString ();
+
+            Debug.Log ("enough gold");
+
+        }
+        Debug.Log ("attempted");
+    }
+    public void SelectRollsRoyce()
+    {
+        if (gold >= RollsRoycePrice) 
+        {
+            itemSelection = 7;
+            gold -= RollsRoycePrice;
+            RollsRoyce.gameObject.SetActive(false);
             myGoldDisplay.text = "Current Balance: " + gold.ToString ();
 
             Debug.Log ("enough gold");
@@ -96,67 +173,6 @@ public class ShopScrollList : MonoBehaviour {
         endTurn = true;
     }
 
-    // private void RemoveButtons()
-    // {
-    //     while (contentPanel.childCount > 0) 
-    //     {
-    //         GameObject toRemove = transform.GetChild(0).gameObject;
-    //         buttonObjectPool.ReturnObject(toRemove);
-    //     }
-    // }
-
-    // private void AddButtons()
-    // {
-    //     for (int i = 0; i < itemList.Count; i++) 
-    //     {
-    //         Item item = itemList[i];
-    //         GameObject newButton = buttonObjectPool.GetObject();
-    //         newButton.transform.SetParent(contentPanel);
-
-    //         SampleShopButton sampleShopButton = newButton.GetComponent<SampleShopButton>();
-    //         // print("index" + i);
-    //         if(sampleShopButton){
-    //             sampleShopButton.Setup(item, this);
-    //         }
-    //     }
-    // }
-
-    // public void TryTransferItemToOtherShop(Item item)
-    // {
-    //     if (otherShop.gold >= item.price) 
-    //     {
-    //         // PurchaseConfirmation();
-    //         gold += item.price;
-    //         otherShop.gold -= item.price;
-
-    //         AddItem(item, otherShop);
-    //         RemoveItem(item, this);
-
-    //         RefreshDisplay();
-    //         otherShop.RefreshDisplay();
-    //         Debug.Log ("enough gold");
-
-    //     }
-    //     Debug.Log ("attempted");
-    // }
-
-    // public IEnumerator PurchaseGameItem(Button curItem, Text price)
-    // {
-    //     Debug.Log("entr");
-    //     int itemPrice = int.Parse(price.text);
-    //     if (gold >= itemPrice) 
-    //     {
-    //         gold -= itemPrice;
-    //         curItem.gameObject.SetActive(false);
-    //         // shop.gameObject.SetActive(false);
-    //         myGoldDisplay.text = "Current Balance: " + gold.ToString ();
-    //         yield return BombUI.instance.Bomb(3);
-
-    //         Debug.Log ("enough gold");
-
-    //     }
-    //     Debug.Log ("attempted");
-    // }
 
     public IEnumerator PurchaseInShop(Player player)
     {
@@ -170,15 +186,51 @@ public class ShopScrollList : MonoBehaviour {
             while(itemSelection != 0){
                 switch(itemSelection){
                     case 1:
-                        transform.GetChild(0).gameObject.SetActive(false);
+                        // transform.GetChild(0).gameObject.SetActive(false);
                         player.AdjustBalanceBy(-bombPrice);
-                        yield return BombUI.instance.Bomb(3);
+                        player.BuyBomb();
+                        // yield return BombUI.instance.Bomb(3);
                         itemSelection = 0;
                         Debug.Log("back");
-                        transform.GetChild(0).gameObject.SetActive(true);
+                        // transform.GetChild(0).gameObject.SetActive(true);
                         break;
                     case 2:
                         // yield return TheifUI.instance.Thief();
+                        player.AdjustBalanceBy(-thiefPrice);
+                        player.BuyThieves();
+                        itemSelection = 0;
+                        Debug.Log("thief");
+                        break;
+                    case 3:
+                        // yield return TheifUI.instance.Thief();
+                        player.AdjustBalanceBy(-BenzGPrice);
+                        
+                        player.BuyNewCar(Player.CarCollectionsEnum.BenzG);
+                        itemSelection = 0;
+                        break;
+                    case 4:
+                        // yield return TheifUI.instance.Thief();
+                        player.AdjustBalanceBy(-LamborghiniPrice);
+                        player.BuyNewCar(Player.CarCollectionsEnum.Lamborghini);
+                        itemSelection = 0;
+                        break;
+                    case 5:
+                        // yield return TheifUI.instance.Thief();
+                        player.AdjustBalanceBy(-BentleyPrice);
+                        player.BuyNewCar(Player.CarCollectionsEnum.Bentley);
+                        itemSelection = 0;
+                        break;
+                    case 6:
+                        // yield return TheifUI.instance.Thief();
+                        player.AdjustBalanceBy(-FerrariPrice);
+                        player.BuyNewCar(Player.CarCollectionsEnum.Ferrari);
+                        itemSelection = 0;
+                        break;
+                    case 7:
+                        // yield return TheifUI.instance.Thief();
+                        player.AdjustBalanceBy(-RollsRoycePrice);
+                        player.BuyNewCar(Player.CarCollectionsEnum.RollsRoyce);
+                        itemSelection = 0;
                         break;
                 }
             }
