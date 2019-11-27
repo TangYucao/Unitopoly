@@ -2193,6 +2193,26 @@ PrefabInstance:
       propertyPath: m_Text
       value: RollsRoyce
       objectReference: {fileID: 0}
+    - target: {fileID: 6847105306795167979, guid: 06b0a762cfe2549edb6692ec19adc46e,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 784162455}
+    - target: {fileID: 6847105306795167979, guid: 06b0a762cfe2549edb6692ec19adc46e,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SelectRollsRoyce
+      objectReference: {fileID: 0}
+    - target: {fileID: 6847105306795167979, guid: 06b0a762cfe2549edb6692ec19adc46e,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 215475191744045636, guid: 06b0a762cfe2549edb6692ec19adc46e,
+        type: 3}
+      propertyPath: m_Text
+      value: 'Price: $50000'
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 06b0a762cfe2549edb6692ec19adc46e, type: 3}
 --- !u!224 &126333906 stripped
@@ -4315,6 +4335,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 326223736}
   m_CullTransparentMesh: 0
+--- !u!114 &329647610 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6847105306795167979, guid: 06b0a762cfe2549edb6692ec19adc46e,
+    type: 3}
+  m_PrefabInstance: {fileID: 1781809633}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1392445389, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!224 &330645158 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 6060059658368765317, guid: 06b0a762cfe2549edb6692ec19adc46e,
@@ -4562,6 +4594,37 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 1098695831458647917, guid: 06b0a762cfe2549edb6692ec19adc46e,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: cb1118924af5eb24c87145a189d44291,
+        type: 3}
+    - target: {fileID: 1098695831458647917, guid: 06b0a762cfe2549edb6692ec19adc46e,
+        type: 3}
+      propertyPath: m_Color.r
+      value: 0.7607844
+      objectReference: {fileID: 0}
+    - target: {fileID: 1098695831458647917, guid: 06b0a762cfe2549edb6692ec19adc46e,
+        type: 3}
+      propertyPath: m_Color.g
+      value: 0.7607844
+      objectReference: {fileID: 0}
+    - target: {fileID: 1098695831458647917, guid: 06b0a762cfe2549edb6692ec19adc46e,
+        type: 3}
+      propertyPath: m_Color.b
+      value: 0.7607844
+      objectReference: {fileID: 0}
+    - target: {fileID: 1098695831458647917, guid: 06b0a762cfe2549edb6692ec19adc46e,
+        type: 3}
+      propertyPath: m_Color.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1098695831458647917, guid: 06b0a762cfe2549edb6692ec19adc46e,
+        type: 3}
+      propertyPath: m_RaycastTarget
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6847105306795167979, guid: 06b0a762cfe2549edb6692ec19adc46e,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
@@ -4621,37 +4684,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
-      objectReference: {fileID: 0}
-    - target: {fileID: 1098695831458647917, guid: 06b0a762cfe2549edb6692ec19adc46e,
-        type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: cb1118924af5eb24c87145a189d44291,
-        type: 3}
-    - target: {fileID: 1098695831458647917, guid: 06b0a762cfe2549edb6692ec19adc46e,
-        type: 3}
-      propertyPath: m_Color.r
-      value: 0.7607844
-      objectReference: {fileID: 0}
-    - target: {fileID: 1098695831458647917, guid: 06b0a762cfe2549edb6692ec19adc46e,
-        type: 3}
-      propertyPath: m_Color.g
-      value: 0.7607844
-      objectReference: {fileID: 0}
-    - target: {fileID: 1098695831458647917, guid: 06b0a762cfe2549edb6692ec19adc46e,
-        type: 3}
-      propertyPath: m_Color.b
-      value: 0.7607844
-      objectReference: {fileID: 0}
-    - target: {fileID: 1098695831458647917, guid: 06b0a762cfe2549edb6692ec19adc46e,
-        type: 3}
-      propertyPath: m_Color.a
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1098695831458647917, guid: 06b0a762cfe2549edb6692ec19adc46e,
-        type: 3}
-      propertyPath: m_RaycastTarget
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 215475191744045636, guid: 06b0a762cfe2549edb6692ec19adc46e,
         type: 3}
@@ -7026,6 +7058,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   displayText: {fileID: 1956572970}
   okButton: {fileID: 1736972011}
+--- !u!114 &564890955 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6847105306795167979, guid: 06b0a762cfe2549edb6692ec19adc46e,
+    type: 3}
+  m_PrefabInstance: {fileID: 126333905}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1392445389, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &567659009
 GameObject:
   m_ObjectHideFlags: 0
@@ -8791,6 +8835,11 @@ MonoBehaviour:
   myGoldDisplay: {fileID: 1134418848}
   bomb: {fileID: 511667465}
   thief: {fileID: 330645161}
+  BenzG: {fileID: 1891595187}
+  Lamborghini: {fileID: 1260968305}
+  Bentley: {fileID: 996332363}
+  Ferrari: {fileID: 329647610}
+  RollsRoyce: {fileID: 564890955}
   gold: 20
   endTurn: 0
   itemSelection: 0
@@ -10608,6 +10657,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 966724940}
   m_CullTransparentMesh: 0
+--- !u!114 &996332363 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6847105306795167979, guid: 06b0a762cfe2549edb6692ec19adc46e,
+    type: 3}
+  m_PrefabInstance: {fileID: 1584376832}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1392445389, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1005482350
 GameObject:
   m_ObjectHideFlags: 0
@@ -11307,15 +11368,30 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 21300000, guid: c89a02c9baab98f4697afe8ce9ed98cf,
         type: 3}
-    - target: {fileID: 215475191744045636, guid: 06b0a762cfe2549edb6692ec19adc46e,
-        type: 3}
-      propertyPath: m_Text
-      value: 3
-      objectReference: {fileID: 0}
     - target: {fileID: 7852677185866876557, guid: 06b0a762cfe2549edb6692ec19adc46e,
         type: 3}
       propertyPath: m_Text
       value: BenzG
+      objectReference: {fileID: 0}
+    - target: {fileID: 6847105306795167979, guid: 06b0a762cfe2549edb6692ec19adc46e,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 784162455}
+    - target: {fileID: 6847105306795167979, guid: 06b0a762cfe2549edb6692ec19adc46e,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SelectBenzG
+      objectReference: {fileID: 0}
+    - target: {fileID: 6847105306795167979, guid: 06b0a762cfe2549edb6692ec19adc46e,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 215475191744045636, guid: 06b0a762cfe2549edb6692ec19adc46e,
+        type: 3}
+      propertyPath: m_Text
+      value: 'Price: $150000'
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 06b0a762cfe2549edb6692ec19adc46e, type: 3}
@@ -13454,6 +13530,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1259848950}
   m_CullTransparentMesh: 0
+--- !u!114 &1260968305 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6847105306795167979, guid: 06b0a762cfe2549edb6692ec19adc46e,
+    type: 3}
+  m_PrefabInstance: {fileID: 1464836641}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1392445389, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1265341918
 GameObject:
   m_ObjectHideFlags: 0
@@ -14488,15 +14576,30 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 21300000, guid: 1f4309d4c2f4949048339ca44f8d1b98,
         type: 3}
-    - target: {fileID: 215475191744045636, guid: 06b0a762cfe2549edb6692ec19adc46e,
-        type: 3}
-      propertyPath: m_Text
-      value: 2
-      objectReference: {fileID: 0}
     - target: {fileID: 7852677185866876557, guid: 06b0a762cfe2549edb6692ec19adc46e,
         type: 3}
       propertyPath: m_Text
       value: Thief
+      objectReference: {fileID: 0}
+    - target: {fileID: 6847105306795167979, guid: 06b0a762cfe2549edb6692ec19adc46e,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 784162455}
+    - target: {fileID: 6847105306795167979, guid: 06b0a762cfe2549edb6692ec19adc46e,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SelectThief
+      objectReference: {fileID: 0}
+    - target: {fileID: 6847105306795167979, guid: 06b0a762cfe2549edb6692ec19adc46e,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 215475191744045636, guid: 06b0a762cfe2549edb6692ec19adc46e,
+        type: 3}
+      propertyPath: m_Text
+      value: 'Price: $50000'
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 06b0a762cfe2549edb6692ec19adc46e, type: 3}
@@ -15265,6 +15368,26 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Text
       value: Lamborghini
+      objectReference: {fileID: 0}
+    - target: {fileID: 6847105306795167979, guid: 06b0a762cfe2549edb6692ec19adc46e,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 784162455}
+    - target: {fileID: 6847105306795167979, guid: 06b0a762cfe2549edb6692ec19adc46e,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SelectLamborghini
+      objectReference: {fileID: 0}
+    - target: {fileID: 6847105306795167979, guid: 06b0a762cfe2549edb6692ec19adc46e,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 215475191744045636, guid: 06b0a762cfe2549edb6692ec19adc46e,
+        type: 3}
+      propertyPath: m_Text
+      value: 'Price: $250000'
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 06b0a762cfe2549edb6692ec19adc46e, type: 3}
@@ -16748,6 +16871,26 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Text
       value: Bentley
+      objectReference: {fileID: 0}
+    - target: {fileID: 6847105306795167979, guid: 06b0a762cfe2549edb6692ec19adc46e,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 784162455}
+    - target: {fileID: 6847105306795167979, guid: 06b0a762cfe2549edb6692ec19adc46e,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SelectBentley
+      objectReference: {fileID: 0}
+    - target: {fileID: 6847105306795167979, guid: 06b0a762cfe2549edb6692ec19adc46e,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 215475191744045636, guid: 06b0a762cfe2549edb6692ec19adc46e,
+        type: 3}
+      propertyPath: m_Text
+      value: 'Price: $300000'
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 06b0a762cfe2549edb6692ec19adc46e, type: 3}
@@ -18282,6 +18425,26 @@ PrefabInstance:
       propertyPath: m_Text
       value: Ferrari
       objectReference: {fileID: 0}
+    - target: {fileID: 6847105306795167979, guid: 06b0a762cfe2549edb6692ec19adc46e,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 784162455}
+    - target: {fileID: 6847105306795167979, guid: 06b0a762cfe2549edb6692ec19adc46e,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SelectFerrari
+      objectReference: {fileID: 0}
+    - target: {fileID: 6847105306795167979, guid: 06b0a762cfe2549edb6692ec19adc46e,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 215475191744045636, guid: 06b0a762cfe2549edb6692ec19adc46e,
+        type: 3}
+      propertyPath: m_Text
+      value: 'Price: $350000'
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 06b0a762cfe2549edb6692ec19adc46e, type: 3}
 --- !u!224 &1781809634 stripped
@@ -19193,6 +19356,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1885382857}
   m_CullTransparentMesh: 0
+--- !u!114 &1891595187 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6847105306795167979, guid: 06b0a762cfe2549edb6692ec19adc46e,
+    type: 3}
+  m_PrefabInstance: {fileID: 1053240912}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1392445389, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1905498797
 GameObject:
   m_ObjectHideFlags: 0
