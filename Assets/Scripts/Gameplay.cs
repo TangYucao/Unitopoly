@@ -155,6 +155,10 @@ public class Gameplay : MonoBehaviour
         {
             foreach (Player player in players)
             {
+                if (player.IsWinner())
+                {
+                    yield return GameOver.instance.DisplayAlert(player.GetPlayerName() + " win.", Color.red);
+                }
                 bool doubles = true;
                 int doubleRolls = 0;
                 yield return TurnActions.instance.DisplayPlayerName(player.GetPlayerName());
@@ -226,7 +230,7 @@ public class Gameplay : MonoBehaviour
                         // Too many doubles 
                         if (doubleRolls >= 3)
                         {
-                            yield return player.JumpToSpace(InJail.instance, 1f);
+                            yield return player.remaining_stays = 3;
                             break;
                         }
                     }
@@ -234,7 +238,7 @@ public class Gameplay : MonoBehaviour
                     {
                         doubles = false;
                     }
-#if DEVELOP && !DEMO
+#if DEVELOP && DEMO
                     if (i == 0 || i == 1)
                         yield return player.MoveSpaces(3);
                     else

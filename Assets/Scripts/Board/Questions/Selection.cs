@@ -23,7 +23,7 @@ public class Selection : BoardLocation
     {
         int size = lines.Length;
         System.Random random = new System.Random();
-        int index = random.Next(10, size);
+        int index = random.Next(10, size-5);
         Debug.Log(index);
         while (true)
         {

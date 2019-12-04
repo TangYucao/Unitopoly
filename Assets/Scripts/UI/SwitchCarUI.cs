@@ -96,7 +96,7 @@ public class SwitchCarUI : MonoBehaviour
         Destroy(player.current_module);
         new_module.transform.parent = player.transform;
         new_module.transform.position = player.transform.position;
-        player.transform.rotation.Set(player.transform.rotation.x, player.transform.rotation.y, player.transform.rotation.z, player.transform.rotation.w);
+        new_module.transform.localEulerAngles =  new Vector3(0, 0,0);
         player.current_module = new_module;
 
 

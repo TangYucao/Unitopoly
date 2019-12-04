@@ -19,7 +19,7 @@ public class TrueFalse : BoardLocation
     {
         int size = lines.Length;
         System.Random random = new System.Random();
-        int index = random.Next(1, size);
+        int index = random.Next(1, size-2);
         // Debug.Log(index);
         if (lines[index].Contains("TRUE") || lines[index].Contains("FALSE"))
         {

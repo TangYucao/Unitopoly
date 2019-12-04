@@ -14,8 +14,8 @@ public class TurnActions : MonoBehaviour
 
     [SerializeField] private Text rollText;
     [SerializeField] private Text player_name;
-    
-    public enum UserAction {ROLL, TRADE, MORTGAGE, BUILD, UNDECIDED}
+
+    public enum UserAction { ROLL, TRADE, MORTGAGE, BUILD, UNDECIDED }
     private UserAction chosenAction = UserAction.UNDECIDED;
     public UserAction GetChosenAction()
     {
@@ -25,13 +25,12 @@ public class TurnActions : MonoBehaviour
     public IEnumerator GetUserInput(bool enableRoll)
     {
         chosenAction = UserAction.UNDECIDED;
-        
+
         transform.GetChild(0).gameObject.SetActive(true);
         rollText.text = enableRoll ? "ROLL" : "End Turn";
-
         while (chosenAction == UserAction.UNDECIDED)
             yield return null;
-        
+
         transform.GetChild(0).gameObject.SetActive(false);
     }
 
@@ -55,11 +54,11 @@ public class TurnActions : MonoBehaviour
         chosenAction = UserAction.BUILD;
     }
 
-    
+
     public IEnumerator DisplayPlayerName(string name)
     {
-        this.player_name.text=name;
-        Debug.Log("[62]"+name);
+        this.player_name.text = name;
+        Debug.Log("[62]" + name);
         yield return null;
     }
 }

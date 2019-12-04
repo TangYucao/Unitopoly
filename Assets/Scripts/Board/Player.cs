@@ -44,7 +44,17 @@ public class Player : MonoBehaviour
     {
         this.thieves++;
     }
-
+    public bool IsWinner()
+    {
+        if (this.IsAI() && this.GetBalance() >= 1550000)
+            return true;
+        int sum_cars = 0;
+        foreach (var car_bool in car_collections_bool)
+        {
+            sum_cars += car_bool ? 1 : 0;
+        }
+        return sum_cars == car_collections_bool.Length ? true : false;
+    }
     public void SetPlayerName(string playerName)
     {
         this.playerName = playerName;
@@ -111,6 +121,7 @@ public class Player : MonoBehaviour
         dice_number = 2;
         income_ratio = 1;
         car_collections_bool = new bool[5];
+        // this.BuyNewCar(Player.CarCollectionsEnum.Lamborghini);
         accountBalance = 100000;
         bombs = 0;
         thieves = 0;
