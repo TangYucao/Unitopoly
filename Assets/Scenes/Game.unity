@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.9964315, g: 0.8711385, b: 0.7254699, a: 1}
+  m_IndirectSpecularColor: {r: 0.9965386, g: 0.8711928, b: 0.7254983, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2186,7 +2186,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: c89a02c9baab98f4697afe8ce9ed98cf,
+      objectReference: {fileID: 21300000, guid: 8bc3a97a54d9a4380836c1fa1a6927bc,
         type: 3}
     - target: {fileID: 7852677185866876557, guid: 06b0a762cfe2549edb6692ec19adc46e,
         type: 3}
@@ -3443,7 +3443,7 @@ MonoBehaviour:
   propertyName: Marylebone Station Parking
   purchasePrice: 10000
   charge_value: 3000
-  deed: {fileID: 21300000, guid: 3604e6ba61b93428387011b69c87959b, type: 3}
+  deed: {fileID: 21300000, guid: 15f7ff09ab2734cefac20da9ad58cbcc, type: 3}
   otherRailroads:
   - {fileID: 1351693751}
   - {fileID: 1189629615}
@@ -8571,7 +8571,7 @@ MonoBehaviour:
   propertyName: Liverpool St. Station
   purchasePrice: 10000
   charge_value: 3000
-  deed: {fileID: 21300000, guid: 62fcf104a733941e79319e3b78abebc4, type: 3}
+  deed: {fileID: 21300000, guid: 15f7ff09ab2734cefac20da9ad58cbcc, type: 3}
   otherRailroads:
   - {fileID: 1351693751}
   - {fileID: 240120989}
@@ -11540,7 +11540,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: c89a02c9baab98f4697afe8ce9ed98cf,
+      objectReference: {fileID: 21300000, guid: cb0512d56afe04677ab3aa7e4cf85f43,
         type: 3}
     - target: {fileID: 7852677185866876557, guid: 06b0a762cfe2549edb6692ec19adc46e,
         type: 3}
@@ -12834,7 +12834,7 @@ MonoBehaviour:
   propertyName: Fenchurch St. Station
   purchasePrice: 10000
   charge_value: 3000
-  deed: {fileID: 21300000, guid: 75638f7ab9cbe4d979d12ae83b20e721, type: 3}
+  deed: {fileID: 21300000, guid: 15f7ff09ab2734cefac20da9ad58cbcc, type: 3}
   otherRailroads:
   - {fileID: 1351693751}
   - {fileID: 240120989}
@@ -14444,7 +14444,7 @@ MonoBehaviour:
   propertyName: Kings Cross Station Parking
   purchasePrice: 10000
   charge_value: 3000
-  deed: {fileID: 21300000, guid: a29282810acaa4690b6367c4f6000a83, type: 3}
+  deed: {fileID: 21300000, guid: 15f7ff09ab2734cefac20da9ad58cbcc, type: 3}
   otherRailroads:
   - {fileID: 240120989}
   - {fileID: 1189629615}
@@ -14872,7 +14872,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 1f4309d4c2f4949048339ca44f8d1b98,
+      objectReference: {fileID: 21300000, guid: c6b9298af9fff4410848c5d62e750422,
         type: 3}
     - target: {fileID: 7852677185866876557, guid: 06b0a762cfe2549edb6692ec19adc46e,
         type: 3}
@@ -15660,7 +15660,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: c89a02c9baab98f4697afe8ce9ed98cf,
+      objectReference: {fileID: 21300000, guid: 3e4a4c305598d4dc9858df3c483fcfdd,
         type: 3}
     - target: {fileID: 7852677185866876557, guid: 06b0a762cfe2549edb6692ec19adc46e,
         type: 3}
@@ -17240,7 +17240,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: c89a02c9baab98f4697afe8ce9ed98cf,
+      objectReference: {fileID: 21300000, guid: 52ae233cbec33455aa8483289642b105,
         type: 3}
     - target: {fileID: 7852677185866876557, guid: 06b0a762cfe2549edb6692ec19adc46e,
         type: 3}
@@ -18942,7 +18942,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: c89a02c9baab98f4697afe8ce9ed98cf,
+      objectReference: {fileID: 21300000, guid: 2f1bb83f096c7419986259caa175b199,
         type: 3}
     - target: {fileID: 7852677185866876557, guid: 06b0a762cfe2549edb6692ec19adc46e,
         type: 3}
